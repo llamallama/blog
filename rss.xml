@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - RSS Feed</title>
+    <link>http://localhost:8000/</link>
+    <description>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 May 2025 00:28:55 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Hello World!</title>
+        <link>http://localhost:8000/2025/05/03/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/03/hello-world/</guid>
+        <pubDate>Sat, 03 May 2025 21:20:12 -0400</pubDate>
+        <atom:updated>2025-05-03T21:20:12-04:00</atom:updated>
+        <description><![CDATA[My first Post using BSSG]]></description>
+    </item>
+</channel>
+</rss>
