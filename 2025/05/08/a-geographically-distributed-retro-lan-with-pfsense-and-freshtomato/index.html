@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato | The Pipetogrep Blog</title>
+    <meta name="description" content="Building a safe and secure retro LAN spanning multiple states">
+    <meta property="og:title" content="A Geographically Distributed Retro LAN with pfSense and FreshTomato | The Pipetogrep Blog">
+    <meta property="og:description" content="Building a safe and secure retro LAN spanning multiple states">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="A Geographically Distributed Retro LAN with pfSense and FreshTomato | The Pipetogrep Blog">
+    <meta name="twitter:description" content="Building a safe and secure retro LAN spanning multiple states">
+    
+    <meta name="theme-color" content="#808080">
+    <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    <!-- bssg:tag_rss_link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "A Geographically Distributed Retro LAN with pfSense and FreshTomato",
+  "datePublished": "2025-05-08T21:29:05-04:00",
+  "dateModified": "2025-05-08T21:29:05-04:00",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Jones",
+    "email": "anonymous@example.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Pipetogrep Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.pipetogrep.org/logo.png"
+    }
+  },
+  "description": "Building a safe and secure retro LAN spanning multiple states",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/"
+  }}
+}
+</script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="https://blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
+            <p>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</p>
+            <nav>
+                <a href="https://blog.pipetogrep.org/">Home</a> <a href="https://blog.pipetogrep.org/tags/">Tags</a> <a href="https://blog.pipetogrep.org/archives/">Archives</a> <a href="https://blog.pipetogrep.org/rss.xml">RSS</a>
+            </nav>
+        </header>
+        <main> <article class="post">
+  <h1>A Geographically Distributed Retro LAN with pfSense and FreshTomato</h1>
+<div class="page-meta">Published on: 2025-05-08 21:29:05 &bull; 11 min read</div>
+
+<h2>The Retro LAN</h2>
+<p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
+<p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
+<p>What does one do with a retro LAN? In our case we have and will:</p>
+<ul>
+<li>Chat with Microsoft NetMeeting on Windows 98 (have)</li>
+<li>Screen share and remote control each other's Windows 98 machines via NetMeeting (have)</li>
+<li>Share files between Windows 98 machines via workgroup file sharing (have)</li>
+<li>Video conference with iChat on OS X 10.3 - 10.5 (have)</li>
+<li>Playing multiplayer games via TCP/IP and IPX (have)</li>
+<li>Setting up old-school Win NT and/or Novell NetWare servers and having clients connect to them (will)</li>
+</ul>
+<h2>Requirements</h2>
+<p>The way to bridge two remote networks is obvious. Use a VPN. But VPNs are complex and old operating systems do not support modern encryption standards. What we wanted was something that is:</p>
+<ul>
+<li>Always on</li>
+<li>Would not require a VPN client to run on the retro machines. Even if they could; the CPU overhead is too much</li>
+<li>Maintenance free</li>
+<li>Runs at the Ethernet layer (layer 2) and not the IP layer (layer 3). That allows for non-IP-based protocols to work, like IPX and AppleTalk.</li>
+<li>Isolated from our main networks for security reasons. It should be a completely isolated bastion of vulnerable retro goodness.</li>
+<li>For the VPN Client to be &quot;portable&quot; with the exception of needing a power cable.</li>
+</ul>
+<h2>The Tech</h2>
+<p>Because we want layer 2 connectivity, we settled on a TAP OpenVPN network. What follows is the whole tech stack diagrammed and explained, so get your propeller beanie cap out because this is going to get technical!</p>
+<p>The tech and software stack we are working with is:</p>
+<ul>
+<li><a href="https://www.pfsense.org/">pfSense</a> router with 1 WAN and 3 LAN interfaces</li>
+<li>OpenVPN running directly on pfSense bridged to one of the interfaces</li>
+<li>A modded Netgear R7000 wireless router (fast, powerful, and super cheap on eBay!) running <a href="https://freshtomato.org/">FreshTomato</a> to act as a dedicated hardware OpenVPN client. Anything that plugs into it in Florida will instantly be on the retro LAN in New York.</li>
+</ul>
+<p>The end result looks like this. Click for the full size version.
+<a href="/images/retro_lan.png"><img src="/images/retro_lan.png" alt="Network Diagram" /></a></p>
+<h2>Assumptions</h2>
+<p>This guide assumes some working knowledge of:</p>
+<ul>
+<li>OpenVPN Servers and Clients</li>
+<li>Router Modding with alternate firmware</li>
+</ul>
+<h2>pfSense</h2>
+<p>On the pfSense box go to <strong>Interfaces &gt; Assignments</strong>, create an interface called &quot;retro&quot;, and assign it to an unused physical interface. We're using a dedicated interface because that lets us isolate the traffic from the rest of the network.
+<a href="/images/pfsense_interfaces.png"><img src="/images/pfsense_interfaces.png" alt="pfSense Interfaces" /></a></p>
+<h3>pfSense Interface Settings</h3>
+<p>The retro interface needs an IP address. I chose <strong>192.168.30.1</strong>
+<a href="/images/pfsense_interface_ip.png"><img src="/images/pfsense_interface_ip.png" alt="pfSense Interface IP" /></a></p>
+<p>Be sure to enable DHCP for this interface and set an IP range. This will be one of two IP ranges that will be in the same subnet but will not overlap. I chose <strong>192.168.30.100 - 192.168.30.150</strong>.
+<a href="/images/pfsense_interface_dhcp.png"><img src="/images/pfsense_interface_dhcp.png" alt="pfSense Interface DHCP" /></a></p>
+<h3>pfSense Firewall Rules</h3>
+<p>Now we need to set up firewall rules to prevent access between the retro and main LANs. In pfSense, go to <strong>Firewall &gt; Rules</strong>. For the retro interface, we need a rule that blocks all traffic from the retro subnets to the main LAN subnets.
+<a href="/images/pfsense_retro_firewall.png"><img src="/images/pfsense_retro_firewall.png" alt="pfSense Retro Firewall" /></a></p>
+<p>Next we need a firewall rule under the main LAN interface that blocks all traffic from the main LAN subnets to the retro subnets.
+<a href="/images/pfsense_lan_firewall.png"><img src="/images/pfsense_lan_firewall.png" alt="pfSense Main LAN Firewall" /></a></p>
+<h3>pfSense VPN Server</h3>
+<p>Now that the interfaces are created, it's time to set up the VPN server. This guide assumes some level of knowledge with OpenVPN. It is a complicated topic and its setup and administration would make this post far longer than it already is.</p>
+<p>pfSense has plenty of documentation on the topic which will walk you through pfSense's VPN wizard, certificate authority, and user certificate setup. I suggest starting with <a href="https://docs.netgate.com/pfsense/en/latest/recipes/openvpn-ra.html">this guide</a>, getting a VPN up and working first, and then modifying it for use with the retro LAN. The latter is what we will be covering here, however you can see my entire VPN setup <a href="/images/pfsense_vpn_full.png">here</a> for reference.</p>
+<ul>
+<li><strong>Device Mode</strong> needs to be set to <strong>tap - Layer 2 Tap Mode</strong>
+<a href="/images/pfsense_vpn_device_mode.png"><img src="/images/pfsense_vpn_device_mode.png" alt="pfSense VPN Device Mode" /></a></li>
+<li>Set <strong>Bridge Interface</strong> to the Retro interface we created earlier. We will need to manually create the bridge separately in a later step.
+<a href="/images/pfsense_vpn_bridge_interface.png"><img src="/images/pfsense_vpn_bridge_interface.png" alt="pfSense VPN Bridge Interface" /></a></li>
+<li>Set <strong>Server Bridge DHCP Start</strong> and <strong>Server Bridge DHCP End</strong>. Make the subnet the same one from earlier (192.168.30.*) but make sure it's in a non-overlapping range. I chose <strong>192.168.30.50 - 192.168.30.99</strong>. There may be a better way to do this but I could not figure out how to get the DHCP IP range settings from earlier to apply.
+<a href="/images/pfsense_vpn_dhcp.png"><img src="/images/pfsense_vpn_dhcp.png" alt="pfSense VPN DHCP" /></a></li>
+<li>Enable <strong>Inter-client Communication</strong>
+<a href="/images/pfsense_vpn_interclient_communication.png"><img src="/images/pfsense_vpn_interclient_communication.png" alt="pfSense VPN Inter-client Communication" /></a></li>
+<li>Enable <strong>DNS Default Domain</strong> and provide a value for DNS Default Domain. I chose Cloudflare's <strong>1.1.1.1</strong>. It might be possible to pass DNS requests through the VPN server to the DNS server listening on 192.168.30.1 for the clients but I was not able to figure it out and it wasn't that important to do so.
+<a href="/images/pfsense_vpn_dns.png"><img src="/images/pfsense_vpn_dns.png" alt="pfSense VPN DNS" /></a></li>
+</ul>
+<h3>pfSense OpenVPN Client Bridge</h3>
+<p>Back on the Interface Assignments Page, create new interface and assign it to <strong>ovpns1 (Retro VPN)</strong>.
+<a href="/images/pfsense_interfaces2.png"><img src="/images/pfsense_interfaces2.png" alt="pfSense Client Bridge Interface" /></a></p>
+<p>Under <strong>Interfaces &gt; Bridges</strong> create a new bridge with the <strong>RETRO</strong> and <strong>RETROVPN</strong> as the members.
+<a href="/images/pfsense_client_bridge.png"><img src="/images/pfsense_client_bridge.png" alt="pfSense Client Bridge" /></a></p>
+<h3>pfSense User Creation</h3>
+<p>A user will have to be created in order to log into the VPN server. I chose to use pfSense's local user manager. This is done simply by going to <strong>System &gt; User Manager</strong>, creating one, and assigning a password.</p>
+<h3>pfSense VPN Client Export</h3>
+<p>In preparation for setting up the VPN client, we need to export the client config for later reference. Before this can be done, the <strong>openvpn-client-export</strong> package must be installed. Go to <strong>System &gt; Package Manager</strong> and install it.</p>
+<p>Now go to <strong>VPN &gt; OpenVPN &gt; Client Export</strong>, scroll down to the <strong>OpenVPN Clients</strong> section, and export the <strong>Most Clients</strong> option. It should download a file ending in &quot;.ovpn&quot;. Open the file in a text editor and keep it for future reference.</p>
+<h2>FreshTomato on the Netgear R7000</h2>
+<p>Now it is time to set up our magic remote retro LAN client box. For this, I am using a Netgear R7000 (aka AC1900), 802.11 AC WiFi Router. It has more than enough processing power for this use, is very easy to mod, and is reliable in my experience. At the time of writing, they cost $15-$20 on eBay. The end result will be a box that connects to your existing WiFi network, connects to the VPN server, and is isolated from the rest of network it resides on. We will be assuming that the
+setup for this will be done on a network external to the one that pfSense is on.</p>
+<p>Now we need to replace the firmware on it to give us the features we need. We will be using <a href="https://wiki.freshtomato.org/doku.php/start">FreshTomato</a> which, at the time of writing, is still actively developed and includes an OpenVPN client. This will not be a guide on how to flash and setup FreshTomato as they have their own <a href="https://wiki.freshtomato.org/doku.php/howtos">documentation</a>. I can tell you that I am using <strong>freshtomato-R7000-K26ARM-2025.2-AIO-64K.zip</strong> where the &quot;AIO&quot; means &quot;all-in-one&quot; and includes the OpenVPN client. Be sure to select the right firmware for your router or you may brick it.</p>
+<p>I suggest getting to the where you can log into the FreshTomato admin page <strong>via a wired connection</strong>, and then coming back to this guide. Do <strong>NOT</strong> try configuring Tomato via a wireless connection as you won't be able to log back into it with the changes we are about to make.</p>
+<h3>FreshTomato Wireless Client Mode</h3>
+<p>In order to connect to the VPN, FreshTomato has to be connected to the internet. There are two options here.</p>
+<ol>
+<li>Connect the Netgear's WAN port into an existing switch on your network.</li>
+<li>Connect use a WiFi network as FreshTomato's WAN.</li>
+</ol>
+<p>We will be doing option 2. In the FreshTomato admin, go to <strong>Basic &gt; Network</strong>. Set &quot;Wireless Client Mode&quot; to either the 2.4 GHz or 5 GHz radio depending on your existing network setup. You can only use one. Then set a LAN IP to something outside of your local network's subnet and <strong>disable the DHCP server</strong>. I chose <strong>10.0.0.1</strong>. Do not save yet.
+<a href="/images/tomato_wireless_client.png"><img src="/images/tomato_wireless_client.png" alt="FreshTomato Wireless Client Mode" /></a></p>
+<p>Scroll down to the interface you selected to use as a wireless client. Set <strong>Wireless Network Mode</strong> to <strong>Wireless Client</strong>. Then put in the SSID and security credentials of your existing wireless network. Then disable the other wireless radio so it is no longer broadcasting.
+<a href="/images/tomato_wireless_connect.png"><img src="/images/tomato_wireless_connect.png" alt="FreshTomato Wireless Connection" /></a></p>
+<p>Now save.</p>
+<p>Next, on the computer you are using to connect to FreshTomato, set your wired connection to have a static IP of <strong>10.0.0.5</strong>. This is necessary since we disabled the DHCP server. Then navigate to <strong>10.0.0.1</strong> and you should be back at the admin interface.</p>
+<p>Now go to <strong>Status &gt; Overview</strong> and verify that one radio is disabled and the other is successfully connected. You will know if it made a connection if you see a value for <strong>Signal Quality</strong></p>
+<p>Now go to <strong>Status &gt; Overview</strong> and verify that one radio is disabled, that the other is wireless client mode and is successfully connected. You will know if it made a connection if you see a value for <strong>Signal Quality</strong>.
+<a href="/images/tomato_status.png"><img src="/images/tomato_status.png" alt="FreshTomato Status" /></a></p>
+<h3>FreshTomato VPN Client</h3>
+<p>Now for the hard part. We are ready to make our VPN client connection. Go to <strong>VPN &gt; OpenVPN Client</strong>. We will now be referencing the ovpn config file we downloaded from pfSense earlier.</p>
+<p>The next part will assume your OpenVPN server has the same auth and cipher settings as mine. If not, update accordingly. Under Client 1's Basic settings set:</p>
+<ul>
+<li>Enable on Start: <strong>Enabled</strong></li>
+<li>Interface Type: <strong>TAP</strong></li>
+<li>Bridge TAP with: <strong>LAN (br0)</strong> (This corresponds to <strong>LAN1</strong> on the back of the router).</li>
+<li>Protocol: <strong>UDP</strong></li>
+<li>Server Address/Port: Use the IP address from the OpenVPN config we previously downloaded. It will be the same as pfSense's WAN IP. Use <strong>1194</strong> for the port.</li>
+<li>Firewall: <strong>Automatic</strong></li>
+<li>Authorization Mode: <strong>TLS</strong></li>
+<li>TLS control channel security: <strong>Outgoing Auth (1)</strong></li>
+<li>Username/Password Authentication: <strong>Enabled</strong></li>
+<li>Username: The name of the user created in the &quot;pfSense User Creation&quot; step above.</li>
+<li>Password: The password of the user created in the &quot;pfSense User Creation&quot; step above.</li>
+<li>Username Authen. Only: <strong>Disabled</strong></li>
+<li>Auth digest: <strong>SHA256</strong></li>
+<li>Server is on the same subnet: <strong>Enabled</strong>
+<a href="/images/tomato_openvpn_client.png"><img src="/images/tomato_openvpn_client.png" alt="FreshTomato OpenVPN Client" /></a></li>
+</ul>
+<p>Go to the <strong>Advanced</strong> tab for the OpenVPN client config. I left everything as the default with the exception of setting the ciphers to match pfSense's OpenVPN server settings.</p>
+<ul>
+<li>Data ciphers: <strong>AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305:AES-256-CBC</strong>
+<a href="/images/tomato_openvpn_client_advanced.png"><img src="/images/tomato_openvpn_client_advanced.png" alt="FreshTomato OpenVPN Client Advanced" /></a></li>
+</ul>
+<p>Go to the <strong>Keys</strong> tab for the OpenVPN client config. We will be referencing the ovpn config we previously downloaded.</p>
+<ul>
+<li>Static Key: Copy and paste from <strong>-----BEGIN OpenVPN Static key V1-----</strong> to <strong>-----END OpenVPN Static key V1-----</strong></li>
+<li>Certificate Authority: Look for the <strong>&lt;ca&gt;</strong> section then from under it copy and paste from <strong>-----BEGIN CERTIFICATE-----</strong> to <strong>-----END CERTIFICATE-----</strong>.</li>
+<li>Client Certificate: Look for the <strong>&lt;cert&gt;</strong> section then from under it copy and paste from <strong>-----BEGIN CERTIFICATE-----</strong> to <strong>-----END CERTIFICATE-----</strong>.</li>
+<li>Client Key: Copy and paste from <strong>-----BEGIN PRIVATE KEY-----</strong> to <strong>-----END PRIVATE KEY-----</strong>
+<a href="/images/tomato_openvpn_client_keys.png"><img src="/images/tomato_openvpn_client_keys.png" alt="FreshTomato OpenVPN Client Keys" /></a></li>
+</ul>
+<p>Save then hit that <strong>Start Now</strong> button!</p>
+<h2>Status and Debugging</h2>
+<p>Back in the pfSense admin page, go to <strong>Status OpenVPN</strong>. You should see a connected client.
+<a href="/images/pfsense_vpn_status.png"><img src="/images/pfsense_vpn_status.png" alt="pfSense OpenVPN Status" /></a></p>
+<p>If you do not see a client, it is time to troubleshoot. The best place to do this is under <strong>Status &gt; System Logs &gt; OpenVPN</strong>. Look for any errors, search for the error message in your favorite search engine or LLM, correct them, and try again.</p>
+<h2>Testing Your Work</h2>
+<p>It is time to plug a network cable into the FreshTomato device. This will <strong>only</strong> work by plugging into <strong>LAN1</strong> as that is the port the TAP connection is bridged to. Upon plugging in, the machine should receive an address in the 192.168.30.* range.</p>
+<p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
+<p>Have fun!</p>
+<div class="tags"> <a href="https://blog.pipetogrep.org/tags/retro-computing/" class="tag">Retro Computing</a> <a href="https://blog.pipetogrep.org/tags/networking/" class="tag">Networking</a> <a href="https://blog.pipetogrep.org/tags/openvpn/" class="tag">OpenVPN</a> <a href="https://blog.pipetogrep.org/tags/home-lab/" class="tag">Home Lab</a> <a href="https://blog.pipetogrep.org/tags/guides/" class="tag">Guides</a></div>
+</article>        </main>
+        <footer>
+            <p>&copy; 2025 Chris Jones. All rights reserved.</p>
+            <p>This site was generated with <a href="https://bssg.dragas.net">BSSG</a>, a Bash Static Site Generator.</p>
+            <p>
+                <a href="https://blog.pipetogrep.org/">Home</a> &middot; <a href="https://blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="https://blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="https://blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
+            </p>
+            <p><a href="#">Back to Top</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
