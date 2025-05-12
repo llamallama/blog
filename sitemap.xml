@@ -7,49 +7,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</loc>
-        <lastmod>2025-05-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</loc>
-        <lastmod>2025-05-06</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</loc>
-        <lastmod>2025-05-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/2025/05/03/hello-world/</loc>
-        <lastmod>2025-05-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/retro-computing/</loc>
-        <lastmod>2025-05-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/networking/</loc>
-        <lastmod>2025-05-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://blog.pipetogrep.org/tags/openvpn/</loc>
-        <lastmod>2025-05-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/home-lab/</loc>
         <lastmod>2025-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
@@ -61,13 +19,31 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://blog.pipetogrep.org/tags/kubernetes/</loc>
+        <loc>https://blog.pipetogrep.org/tags/networking/</loc>
+        <lastmod>2025-05-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.pipetogrep.org/tags/retro-computing/</loc>
+        <lastmod>2025-05-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.pipetogrep.org/tags/home-lab/</loc>
         <lastmod>2025-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://blog.pipetogrep.org/tags/bssg/</loc>
+        <lastmod>2025-05-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.pipetogrep.org/tags/kubernetes/</loc>
         <lastmod>2025-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
