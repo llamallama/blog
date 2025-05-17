@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - Posts tagged with: BSSG</title>
+    <link>http://localhost:8000/tags/bssg/</link>
+    <description>Posts tagged with: BSSG</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 20:04:37 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
+        <link>http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
+        <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
+        <atom:updated>2025-05-05T00:54:10-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><figcaption>BusyBox + k8s = Love</figcaption>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites]]></description>
+    </item>
+    <item>
+        <title>Hello World!</title>
+        <link>http://localhost:8000/2025/05/03/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/03/hello-world/</guid>
+        <pubDate>Sat, 03 May 2025 21:20:12 -0400</pubDate>
+        <atom:updated>2025-05-05T00:48:39-04:00</atom:updated>
+        <description><![CDATA[My first Post using BSSG]]></description>
+    </item>
+</channel>
+</rss>

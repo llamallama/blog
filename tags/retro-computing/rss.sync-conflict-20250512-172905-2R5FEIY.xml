@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - Posts tagged with: Retro Computing</title>
+    <link>http://localhost:8000/tags/retro-computing/</link>
+    <description>Posts tagged with: Retro Computing</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 20:04:37 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
+        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
+        <atom:updated>2025-05-08T21:29:05-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><figcaption>Retro LAN Diagram</figcaption>Building a safe and secure retro LAN spanning multiple states]]></description>
+    </item>
+    <item>
+        <title>IDE Drive Adapters and Picky Retro Computers</title>
+        <link>http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
+        <pubDate>Tue, 06 May 2025 00:50:10 -0400</pubDate>
+        <atom:updated>2025-05-06T01:53:49-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><figcaption>Removable, no. Fixed, yes.</figcaption>I was afraid my diva of a retro laptop would only accept spinning rust.]]></description>
+    </item>
+</channel>
+</rss>
