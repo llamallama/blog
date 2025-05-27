@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/netbsd/</link>
     <description>Posts tagged with: NetBSD</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 20:50:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 22:05:55 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/netbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
@@ -13,7 +13,47 @@
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
         <atom:updated>2025-05-26T20:47:02-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><figcaption>Would you believe it feels faster than Windows 11?</figcaption>Using NetBSD for Python game development (pygame) on a PowerPC iBook G4 from 2004.]]></description>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><figcaption>Would you believe it feels faster than Windows 11?</figcaption><h2>Preamble</h2>
+<p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
+<p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
+<h2>The Hardware</h2>
+<p>This is my 12 inch iBook G4 from early 2004. Her name is Brick.
+<a href="/images/ibook1.jpg"><img src="/images/ibook1.jpg" alt="An iBook G4 named &quot;Brick&quot;" /></a></p>
+<p>Brick is decked out with:</p>
+<ul>
+<li>A 1 GHz G4 PowerPC Processor</li>
+<li>1.25 GB or RAM</li>
+<li>A 128 GB SSD</li>
+<li>An ATI Mobility Radeon 9200</li>
+<li>1024x768 LCD</li>
+</ul>
+<h2>NetBSD</h2>
+<p>Obviously an iBook G4 is long out of support for OS updates. We need an alternate OS if we want to run up-to-date software on this device. NetBSD fits the bill perfectly.</p>
+<p>NetBSD is a free and open-source Unix-like operating system based on the Berkeley Software Distribution (BSD). It's initial release was April 19, 1993 and continues to be developed today. The current version is 10.1 and is the version I am currently running. Why NetBSD on an iBook G4 and not Linux?</p>
+<ul>
+<li>First and foremost, it runs! Most Linux distributions have all but dropped PowerPC 32 bit support. There is still a community supported version of Debian Sid but the installer is hit or miss. Even when I do get it running, things like CPU frequency scaling requiring ancient packages, brightness control wonkiness, audio difficulties, video driver problems, and other various issues make the experience death by a thousand cuts.</li>
+<li>It's fast! Even compared to Linux running on my much faster PowerMac G4, the iBook runs pygame at 60 FPS vs the PowerMac's 25 FPS. Both were running on a non-hardware accelerated X environment.</li>
+<li>NetBSD runs better. All the issues I mentioned previously do not exist for me on NetBSD. Volume and brightness control keyboard shortcuts work even outside of a desktop environment (even in the console!). CPU frequency scaling works. Audio works. Video drivers work. While not everything works like suspend and 3D acceleration, what I need does and does without issue.</li>
+<li>Modern and up-to-date packages. The iBook gets a new lease on life with modern encryption ciphers and certificates. Most importantly, modern Python!</li>
+</ul>
+<h2>pygame</h2>
+<p>Per their <a href="https://www.pygame.org/wiki/about">about page</a>, &quot;Pygame is a set of Python modules designed for writing games. It is written on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language. Pygame is highly portable and runs on nearly every platform and operating system.&quot;</p>
+<p>On the date of this post, 32 bit PowerPC NetBSD has pygame's latest 2.6.0 release available. The only adjustment I had to make to get it to run on the iBook was to disable GLX in my xorg.conf.</p>
+<h2>The Desktop Environment</h2>
+<p>Don't expect miracles. There will be no 3D and no GPU or acceleration due to older video cards not being as well supported. Gnome or KDE, while available, won't run at all. XFCE runs OK, but is rather slow.</p>
+<p>NetBSD ships with <a href="https://www.ctwm.org/index.html">CTWM</a> by default which is very small, basic, and fast, but still quite usable.</p>
+<p><a href="/images/ctwm.png"><img src="/images/ctwm.png" alt="CTWM" /></a></p>
+<p>I opted for <a href="https://i3wm.org/">i3</a> which is a dynamic tiling window manager.</p>
+<h2>The Editing Environment</h2>
+<p>Why <a href="https://www.vim.org/">Vim</a> of course! I use that plus <a href="https://github.com/amix/vimrc">The Ultimate vimrc</a> which provides a lovely, pre-built, and capable Vim environment so I can just get to work and stop messing with my configs! The biggest advantage of Vim for this use case is it's every bit as powerful as larger editors like Visual Studio Code but runs with a mere fraction of the resources.</p>
+<h2>What Kind of Game?</h2>
+<p>Kind of like a geometric puzzle game meets Dominoes where scoring is based on volume and symmetry. It is called &quot;Slantics&quot;. I can't take credit for the concept. That goes to my buddy Rick. Here is my <a href="https://github.com/llamallama/slantics">source code</a> for it. Here is a tiny sample of what it looks like.</p>
+<p><a href="/images/slantics.gif"><img src="/images/slantics.gif" alt="Slantics" /></a></p>
+<p>And here it is running on Brick!</p>
+<p><a href="/images/ibook3.jpg"><img src="/images/ibook3.jpg" alt="iBook G4 Running Slantics" /></a></p>
+<h2>Conclusion</h2>
+<p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
+<p>Thank you for reading!</p>]]></description>
     </item>
 </channel>
 </rss>

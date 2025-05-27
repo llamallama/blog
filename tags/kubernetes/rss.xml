@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/kubernetes/</link>
     <description>Posts tagged with: Kubernetes</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 20:50:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 22:05:54 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/kubernetes/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
@@ -13,7 +13,89 @@
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
         <atom:updated>2025-05-05T00:54:10-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><figcaption>BusyBox + k8s = Love</figcaption>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites]]></description>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><figcaption>BusyBox + k8s = Love</figcaption><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
+<p>Prerequisites:</p>
+<ul>
+<li>A functioning Kubernetes setup</li>
+<li>A <a href="https://bssg.dragas.net">BSSG</a> site running locally on your computer</li>
+<li>A GitHub repo created that contains your BSSG output. Mine is at https://github.com/llamallama/blog</li>
+</ul>
+<p>If you haven't heard of it, BSSG is a new and very capable static site generator written entirely in Bash. It support posts, pages, tags, themes, and more! This blog was built with it and I decided to host it from my home lab. My lab runs a flavor of Kubernetes called <a href="https://k3s.io/">k3s</a>. Since this blog is static, I wanted to find the smallest tool set I could use to host it.</p>
+<p>That was when I learned that <a href="https://www.busybox.net/">busybox</a> has a all the tools required to do just that! Per BusyBox's site:</p>
+<pre><code>BusyBox combines tiny versions of many common UNIX utilities into a single
+small executable. It provides replacements for most of the utilities you 
+usually find in GNU fileutils, shellutils, etc. The utilities in BusyBox 
+generally have fewer options than their full-featured GNU cousins; however,
+the options that are included provide the expected functionality and behave
+very much like their GNU counterparts. BusyBox provides a fairly complete
+environment for any small or embedded system.
+</code></pre>
+<p>Note that it says <em>embedded</em> systems, so this is probably not the most production ready or most performant way to do host a static site, but that is what puts the &quot;lab&quot; in &quot;home lab&quot;. Experimentation!</p>
+<p>Not only can it host the site, but it can also download the code from GitHub. The way this is done will be via three of BusyBox's many utilities: <strong>http</strong>, <strong>wget</strong>, and <strong>unzip</strong>.</p>
+<p>Enough preamble, here's the setup.</p>
+<h2>Kubernetes</h2>
+<p>Set up a standard k8s deployment and use this for the container spec, adjusting to suit your GitHub and k8s setup</p>
+<pre><code>spec:
+  containers:
+  - name: blog
+    # Launch busybox httpd
+    command: [httpd]
+    # Run httpd as the www-data user, in the foreground, in verbose mode, on port 8000
+    args: [ -u, www-data, -f, -v, -p, &quot;8000&quot;]
+    image: busybox
+    workingDir: /var/www
+    ports:
+    - containerPort: 8000
+      name: tcp8000
+      protocol: TCP
+    lifecycle:
+      postStart:
+        exec:
+          command:
+          - sh
+          - -c
+          - |
+            mkdir -p /usr/local/bin;
+            '#!/bin/sh';
+            set -e;
+            wget https://github.com/llamallama/blog/archive/refs/heads/main.zip -O /tmp/main.zip;
+            rm -rf /var/www/*;
+            unzip /tmp/main.zip;
+            mv blog-main/* ./;
+            rm -rf blog-main /tmp/main.zip;
+</code></pre>
+<p>In this example we are using the official busybox image and setting the workingDir to <code>/var/www</code> and having BusyBox's httpd serve the static content in /var/www. The real magic happens in the postStart lifecycle hook. It uses BusyBox's wget to download the main GitHub branch as a zip file, unzip it, and move the files to /var/www.</p>
+<p>Obviously there are some part missing here. Service and ingress settings chief among them, but those are outside of the scope of this post. The relevant parts are the use of BusyBox and the postStart hook.</p>
+<h2>Deploy from BSSG</h2>
+<p>In your BSSG <code>scripts/</code> folder, create a file called <code>deploy.sh</code> and make it look like this, adjusting it to fit your setup.</p>
+<pre><code>#!/usr/bin/env bash
+
+set -eu -o pipefail
+
+# Set our dirs
+output_dir=~/personal/blog/output
+git_dir=~/personal/blog.git
+
+# Clear the Git dir and copy the BSSG output to it
+rm -rf &quot;$git_dir&quot;/*
+cp -R &quot;$output_dir&quot;/* &quot;$git_dir&quot;/
+
+# Add, commit, and push to GitHub
+cd &quot;$git_dir&quot;
+git add .
+git commit -am &quot;Update $(date)&quot;
+git push origin main
+
+# Redeploy the container
+kubectl rollout restart deployment/blog
+</code></pre>
+<p>On my setup <code>~/personal/blog/output</code> contains my BSSG output. <code>~/personal/blog.git</code> is my Git repo working copy which started empty. The above script copies our blog output to our Git working copy, commits, pushes, and then uses kubectl to redeploy the pod, which will run the postStart lifecycle hook again, which will get the latest site content.</p>
+<p>Next I run</p>
+<pre><code>./bssg.sh build --deploy --site-url &quot;https://blog.pipetogrep.org&quot;
+</code></pre>
+<h2>Conclusion</h2>
+<p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
+<p>Why did I do it like this? Because I can and I wanted to!</p>]]></description>
     </item>
 </channel>
 </rss>
