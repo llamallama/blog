@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/</link>
     <description>I&apos;m Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</description>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 14:25:21 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 14:31:15 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
         <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
-        <atom:updated>2025-05-30T14:25:02-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:26:41-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><figcaption>Windows NT 4 Server Boot Screen</figcaption><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
@@ -241,14 +241,14 @@
 <p>We've installed the OS, set it up with better performing SCSI drivers, installed Service Pack 6, made the mouse usable, gave it better graphics, and got it online. Now what?</p>
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
         <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
-        <atom:updated>2025-05-30T14:24:39-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><figcaption>Would you believe it feels faster than Windows 11?</figcaption><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
@@ -290,14 +290,14 @@
 <h2>Conclusion</h2>
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
         <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
-        <atom:updated>2025-05-30T14:24:11-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:27:35-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><figcaption>Retro LAN Diagram</figcaption><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
@@ -451,7 +451,7 @@ setup for this will be done on a network external to the one that pfSense is on.
         <link>https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
         <pubDate>Tue, 06 May 2025 00:50:10 -0400</pubDate>
-        <atom:updated>2025-05-30T14:23:47-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:29:11-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><figcaption>Removable, no. Fixed, yes.</figcaption><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
 <p>I'm no stranger to using IDE adapters that convert relatively modern media like SD cards or SATA SSDs to work as a laptop IDE drive. I tried one of the latter, but no luck. The Dell saw no hard drive in its BIOS settings. What's worse is the BIOS is extremely limited, only allowing for auto drive detection.</p>
 <p>After some research, I decided to go with the Compact Flash (CF) Card to IDE adapter route. It turns out that CF Cards can behave exactly like an IDE drive. In fact, CF to IDE adapters have no chips on them, only traces to convert the CF Card pinout to IDE.</p>
@@ -463,14 +463,14 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p>I installed the card with an IDE CF card adapter into another vintage machine that did recognize it, booted it from DOS and ran the <code>ATCFWCHG /P /F</code>. After seeing it fail on all the other cards I tried previously, I finally got to see some success.</p>
 <p><img src="/images/atcfwchg.jpg" alt="ATCFWCHG Success" /></p>
 <p>After that, the Dell Inspiron 7000 saw the card as available and bootable. Knowing that it works, I purchased a higher capacity industrial card. I look forward to writing more about this machine soon!</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
         <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
-        <atom:updated>2025-05-30T14:16:43-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><figcaption>BusyBox + k8s = Love</figcaption><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
 <ul>
@@ -554,7 +554,7 @@ kubectl rollout restart deployment/blog
 <h2>Conclusion</h2>
 <p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
 <p>Why did I do it like this? Because I can and I wanted to!</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
     <item>
         <title>Hello World!</title>

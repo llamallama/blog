@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/bssg/</link>
     <description>Posts tagged with: BSSG</description>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 14:25:20 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 14:31:14 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
         <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
-        <atom:updated>2025-05-30T14:16:43-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><figcaption>BusyBox + k8s = Love</figcaption><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
 <ul>
@@ -96,7 +96,7 @@ kubectl rollout restart deployment/blog
 <h2>Conclusion</h2>
 <p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
 <p>Why did I do it like this? Because I can and I wanted to!</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
     <item>
         <title>Hello World!</title>
