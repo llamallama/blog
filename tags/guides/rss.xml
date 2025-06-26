@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/guides/</link>
     <description>Posts tagged with: Guides</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 22:09:29 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 22:11:52 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/guides/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
         <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
-        <atom:updated>2025-05-26T22:07:55-04:00</atom:updated>
+        <atom:updated>2025-05-26T22:10:09-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><figcaption>Windows NT 4 Server Boot Screen</figcaption><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
@@ -102,51 +102,79 @@
 <ol>
 <li>Switch to the VM's console, start the VM, then begin pressing F6 when you see the Proxmox logo. Keep pressing until you see this screen.</li>
 </ol>
-<p><a href="/images/win_nt_f6_boot.png"><img src="/images/win_nt_f6_boot.png" alt="DLL File Corruption" /></a>
-2. Press the <strong>S</strong> key.
-3. Select <strong>Other</strong></p>
-<p><a href="/images/win_nt_other.png"><img src="/images/win_nt_other.png" alt="Other" /></a>
-4. Press <strong>Enter</strong></p>
-<p><a href="/images/win_nt_insert.png"><img src="/images/win_nt_insert.png" alt="Insert Disk" /></a>
-5. Press <strong>Enter</strong> again to select <strong>Symbios PCI SCSI High Performance Driver</strong></p>
-<p><a href="/images/win_nt_scsi_driver.png"><img src="/images/win_nt_scsi_driver.png" alt="SCSI Driver" /></a>
-6. You should now see <strong>Symbios PCI SCSI High Performance Driver</strong> in the list of mass storage devices. Press <strong>Enter</strong>.</p>
-<p><a href="/images/win_nt_mass_storage.png"><img src="/images/win_nt_mass_storage.png" alt="Mass Storage Devices" /></a>
-7. Continue through the installation steps being sure to format the drive as <strong>NTFS</strong>.</p>
+<p><a href="/images/win_nt_f6_boot.png"><img src="/images/win_nt_f6_boot.png" alt="DLL File Corruption" /></a></p>
+<ol start="2">
+<li>Press the <strong>S</strong> key.</li>
+<li>Select <strong>Other</strong></li>
+</ol>
+<p><a href="/images/win_nt_other.png"><img src="/images/win_nt_other.png" alt="Other" /></a></p>
+<ol start="4">
+<li>Press <strong>Enter</strong></li>
+</ol>
+<p><a href="/images/win_nt_insert.png"><img src="/images/win_nt_insert.png" alt="Insert Disk" /></a></p>
+<ol start="5">
+<li>Press <strong>Enter</strong> again to select <strong>Symbios PCI SCSI High Performance Driver</strong></li>
+</ol>
+<p><a href="/images/win_nt_scsi_driver.png"><img src="/images/win_nt_scsi_driver.png" alt="SCSI Driver" /></a></p>
+<ol start="6">
+<li>You should now see <strong>Symbios PCI SCSI High Performance Driver</strong> in the list of mass storage devices. Press <strong>Enter</strong>.</li>
+</ol>
+<p><a href="/images/win_nt_mass_storage.png"><img src="/images/win_nt_mass_storage.png" alt="Mass Storage Devices" /></a></p>
+<ol start="7">
+<li>Continue through the installation steps being sure to format the drive as <strong>NTFS</strong>.</li>
+</ol>
 <p>When the graphical installer comes up, you will notice the mouse is difficult to use. We will fix that in a later step. Struggle with the mouse or use the keyboard for the rest of the installation.</p>
 <ol start="8">
-<li>Continue the installation until you get to the Network Adapter search screen. Click <strong>Select from list...</strong>
-<a href="/images/win_nt_network_adapters.png"><img src="/images/win_nt_network_adapters.png" alt="Network Adapters" /></a></li>
-<li>Select <strong>MS Loopback Adapter</strong>. <strong>IMPORTANT</strong>. Do NOT select &quot;Have Disk&quot; and install the RTL8139 drivers now. It will get stuck on installing TCP/IP and you will have to start over. We're using the MS Loopback Adapter to get around this bug.
-<a href="/images/win_nt_loopback.png"><img src="/images/win_nt_loopback.png" alt="MS Loopback Adapter" /></a></li>
-<li>Continue through the installer until it asks if there is a DHCP server on your network. Select <strong>No</strong>.
-<a href="/images/win_nt_dhcp.png"><img src="/images/win_nt_dhcp.png" alt="DHCP?" /></a></li>
-<li>Enter an IP address. Anything will do. We will be replacing it later.
-<a href="/images/win_nt_ip.png"><img src="/images/win_nt_ip.png" alt="IP Address" /></a></li>
+<li>Continue the installation until you get to the Network Adapter search screen. Click <strong>Select from list...</strong></li>
+</ol>
+<p><a href="/images/win_nt_network_adapters.png"><img src="/images/win_nt_network_adapters.png" alt="Network Adapters" /></a></p>
+<ol start="9">
+<li>Select <strong>MS Loopback Adapter</strong>. <strong>IMPORTANT</strong>. Do NOT select &quot;Have Disk&quot; and install the RTL8139 drivers now. It will get stuck on installing TCP/IP and you will have to start over. We're using the MS Loopback Adapter to get around this bug.</li>
+</ol>
+<p><a href="/images/win_nt_loopback.png"><img src="/images/win_nt_loopback.png" alt="MS Loopback Adapter" /></a></p>
+<ol start="10">
+<li>Continue through the installer until it asks if there is a DHCP server on your network. Select <strong>No</strong>.</li>
+</ol>
+<p><a href="/images/win_nt_dhcp.png"><img src="/images/win_nt_dhcp.png" alt="DHCP?" /></a></p>
+<ol start="11">
+<li>Enter an IP address. Anything will do. We will be replacing it later.</li>
+</ol>
+<p><a href="/images/win_nt_ip.png"><img src="/images/win_nt_ip.png" alt="IP Address" /></a></p>
+<ol start="12">
 <li>Finish the installation and restart.</li>
 </ol>
 <h2>Service Pack 6 Installation</h2>
 <ol>
-<li>Press CTRL-ALT-DEL through the Proxmox console and login as Administrator.
-<a href="/images/win_nt_cad.png"><img src="/images/win_nt_cad.png" alt="The three finger salute" /></a></li>
-<li>In the VM hardware settings, switch to the ISO containing the Service Pack 6 installer.</li>
-<li>Back in the console, navigate to the CD-ROM drive and run the installer.
-<a href="/images/win_nt_sp6.png"><img src="/images/win_nt_sp6.png" alt="Service Pack 6 Installer" /></a></li>
-<li>Reboot.</li>
-<li>Go to Start &gt; Run, then run <strong>winver</strong> to verify your results.
-<a href="/images/win_nt_winver.png"><img src="/images/win_nt_winver.png" alt="winver" /></a></li>
+<li>Press CTRL-ALT-DEL through the Proxmox console and login as Administrator.</li>
 </ol>
+<p><a href="/images/win_nt_cad.png"><img src="/images/win_nt_cad.png" alt="The three finger salute" /></a></p>
+<ol start="2">
+<li>In the VM hardware settings, switch to the ISO containing the Service Pack 6 installer.</li>
+<li>Back in the console, navigate to the CD-ROM drive and run the installer.</li>
+</ol>
+<p><a href="/images/win_nt_sp6.png"><img src="/images/win_nt_sp6.png" alt="Service Pack 6 Installer" /></a></p>
+<ol start="4">
+<li>Reboot.</li>
+<li>Go to Start &gt; Run, then run <strong>winver</strong> to verify your results.</li>
+</ol>
+<p><a href="/images/win_nt_winver.png"><img src="/images/win_nt_winver.png" alt="winver" /></a></p>
 <h2>Mouse Drivers</h2>
 <p>Lets fix the wonky mouse.</p>
 <ol>
 <li>In the VM hardware settings, switch to the ISO containing VMware Tool 3.5.0.</li>
 <li>Back in the console, close the VMware tools installer. Go to <strong>Start &gt; Settings &gt; Control Panel &gt; Mouse</strong>.</li>
-<li>In the <strong>General</strong> tab, click <strong>Change...</strong>
-<a href="/images/win_nt_mouse_settings.png"><img src="/images/win_nt_mouse_settings.png" alt="Mouse Settings" /></a></li>
-<li>Click <strong>Have Disk...</strong>
-<a href="/images/win_nt_mouse_select.png"><img src="/images/win_nt_mouse_select.png" alt="Select Device" /></a></li>
-<li>Click <strong>Browse...</strong> and navigate to <strong>D:\program files\VMware\VMware Tools\Drivers\mouse\winnt</strong>.
-<a href="/images/win_nt_vmmouse.png"><img src="/images/win_nt_vmmouse.png" alt="Locate File" /></a></li>
+<li>In the <strong>General</strong> tab, click <strong>Change...</strong></li>
+</ol>
+<p><a href="/images/win_nt_mouse_settings.png"><img src="/images/win_nt_mouse_settings.png" alt="Mouse Settings" /></a></p>
+<ol start="4">
+<li>Click <strong>Have Disk...</strong></li>
+</ol>
+<p><a href="/images/win_nt_mouse_select.png"><img src="/images/win_nt_mouse_select.png" alt="Select Device" /></a></p>
+<ol start="5">
+<li>Click <strong>Browse...</strong> and navigate to <strong>D:\program files\VMware\VMware Tools\Drivers\mouse\winnt</strong>.</li>
+</ol>
+<p><a href="/images/win_nt_vmmouse.png"><img src="/images/win_nt_vmmouse.png" alt="Locate File" /></a></p>
+<ol start="6">
 <li>Finish installing the VMware Pointing Device driver then reboot.</li>
 </ol>
 <p>Now the mouse in the VM should be perfectly synchronized.</p>
@@ -154,41 +182,61 @@
 <p>This is necessary to get high color and resolution support.</p>
 <ol>
 <li>In the VM hardware settings, switch to the ISO containing the Universal VBE Video Display Driver.</li>
-<li>Back in the console, open <strong>Display Properties</strong> then click <strong>Display Type...</strong>.
-<a href="/images/win_nt_display.png"><img src="/images/win_nt_display.png" alt="Display Properties" /></a></li>
-<li>Click <strong>Change...</strong>
-<a href="/images/win_nt_display2.png"><img src="/images/win_nt_display2.png" alt="Display Type" /></a></li>
-<li>Click <strong>Have Disk...</strong>.
-<a href="/images/win_nt_display3.png"><img src="/images/win_nt_display3.png" alt="Change Display" /></a></li>
-<li>Click <strong>Browse...</strong>
-<a href="/images/win_nt_install_from_disk.png"><img src="/images/win_nt_install_from_disk.png" alt="Install From Disk" /></a></li>
-<li>Navigate to <strong>D:\Vbe30\Nt4</strong>, then click <strong>Open...</strong>. Then click <strong>Ok...</strong>
-<a href="/images/win_nt_locate_file.png"><img src="/images/win_nt_locate_file.png" alt="Locate File" /></a></li>
-<li>Install <strong>AnaPa Corp VBE Miniport</strong>. Then reboot.
-<a href="/images/win_nt_vbe.png"><img src="/images/win_nt_vbe.png" alt="VBE Miniport" /></a></li>
+<li>Back in the console, open <strong>Display Properties</strong> then click <strong>Display Type...</strong>.</li>
 </ol>
-<p>Now you can enjoy Windows NT 4 in true color and high resolution. Here it is at 1080p!
-<a href="/images/win_nt_high_res.png"><img src="/images/win_nt_high_res.png" alt="High Resolution Windows NT4" /></a></p>
+<p><a href="/images/win_nt_display.png"><img src="/images/win_nt_display.png" alt="Display Properties" /></a></p>
+<ol start="3">
+<li>Click <strong>Change...</strong></li>
+</ol>
+<p><a href="/images/win_nt_display2.png"><img src="/images/win_nt_display2.png" alt="Display Type" /></a></p>
+<ol start="4">
+<li>Click <strong>Have Disk...</strong>.</li>
+</ol>
+<p><a href="/images/win_nt_display3.png"><img src="/images/win_nt_display3.png" alt="Change Display" /></a></p>
+<ol start="5">
+<li>Click <strong>Browse...</strong></li>
+</ol>
+<p><a href="/images/win_nt_install_from_disk.png"><img src="/images/win_nt_install_from_disk.png" alt="Install From Disk" /></a></p>
+<ol start="6">
+<li>Navigate to <strong>D:\Vbe30\Nt4</strong>, then click <strong>Open...</strong>. Then click <strong>Ok...</strong></li>
+</ol>
+<p><a href="/images/win_nt_locate_file.png"><img src="/images/win_nt_locate_file.png" alt="Locate File" /></a></p>
+<ol start="7">
+<li>Install <strong>AnaPa Corp VBE Miniport</strong>. Then reboot.</li>
+</ol>
+<p><a href="/images/win_nt_vbe.png"><img src="/images/win_nt_vbe.png" alt="VBE Miniport" /></a></p>
+<p>Now you can enjoy Windows NT 4 in true color and high resolution. Here it is at 1080p!</p>
+<p><a href="/images/win_nt_high_res.png"><img src="/images/win_nt_high_res.png" alt="High Resolution Windows NT4" /></a></p>
 <h2>Network Card Setup</h2>
 <p>Now it's time to get on the Internet.</p>
 <ol>
 <li>In the VM hardware settings, switch to the ISO containing the Realtek 8139 drivers.</li>
-<li>Back in the console, go to <strong>Start &gt; Settings &gt; Control Panel Network</strong>. The go to the <strong>Adapters</strong> tab.
-<a href="/images/win_nt_network_adapters2.png"><img src="/images/win_nt_network_adapters2.png" alt="Network Adapters" /></a></li>
+<li>Back in the console, go to <strong>Start &gt; Settings &gt; Control Panel Network</strong>. The go to the <strong>Adapters</strong> tab.</li>
+</ol>
+<p><a href="/images/win_nt_network_adapters2.png"><img src="/images/win_nt_network_adapters2.png" alt="Network Adapters" /></a></p>
+<ol start="3">
 <li>Click <strong>Add...</strong>.</li>
 <li>Click <strong>Have Disk...</strong></li>
-<li>In the Insert Disk dialog, enter <strong>D:</strong>
-<a href="/images/win_nt_insert2.png"><img src="/images/win_nt_insert2.png" alt="Insert Disk" /></a></li>
-<li>Finishing installing the PCI Fast Ethernet Adapter.
-<a href="/images/win_nt_fast_ethernet.png"><img src="/images/win_nt_fast_ethernet.png" alt="Fast Ethernet Adapter" /></a></li>
-<li>Select the MS Loopback Adapter and click <strong>Remove...</strong>. Then click <strong>Yes</strong>.
-<a href="/images/win_nt_rm_loopback.png"><img src="/images/win_nt_rm_loopback.png" alt="Delete Loopback Adapter" /></a></li>
-<li>Click <strong>Close</strong>. You should now have the option to configure your IP address. Configure it to your liking. I chose DHCP.
-<a href="/images/win_nt_ip2.png"><img src="/images/win_nt_ip2.png" alt="TCP/IP Properties" /></a></li>
+<li>In the Insert Disk dialog, enter <strong>D:</strong></li>
+</ol>
+<p><a href="/images/win_nt_insert2.png"><img src="/images/win_nt_insert2.png" alt="Insert Disk" /></a></p>
+<ol start="6">
+<li>Finishing installing the PCI Fast Ethernet Adapter.</li>
+</ol>
+<p><a href="/images/win_nt_fast_ethernet.png"><img src="/images/win_nt_fast_ethernet.png" alt="Fast Ethernet Adapter" /></a></p>
+<ol start="7">
+<li>Select the MS Loopback Adapter and click <strong>Remove...</strong>. Then click <strong>Yes</strong>.</li>
+</ol>
+<p><a href="/images/win_nt_rm_loopback.png"><img src="/images/win_nt_rm_loopback.png" alt="Delete Loopback Adapter" /></a></p>
+<ol start="8">
+<li>Click <strong>Close</strong>. You should now have the option to configure your IP address. Configure it to your liking. I chose DHCP.</li>
+</ol>
+<p><a href="/images/win_nt_ip2.png"><img src="/images/win_nt_ip2.png" alt="TCP/IP Properties" /></a></p>
+<ol start="9">
 <li>Reboot and see if you're online.</li>
 </ol>
-<p><a href="/images/win_nt_internet.png"><img src="/images/win_nt_internet.png" alt="INTERNET!" /></a>
-<a href="/images/win_nt_internet2.png"><img src="/images/win_nt_internet2.png" alt="MORE INTERNET!" /></a></p>
+<p><a href="/images/win_nt_internet.png"><img src="/images/win_nt_internet.png" alt="INTERNET!" /></a></p>
+<p><a href="/images/win_nt_internet2.png"><img src="/images/win_nt_internet2.png" alt="MORE INTERNET!" /></a></p>
 <h2>Conclusion</h2>
 <p>We've installed the OS, set it up with better performing SCSI drivers, installed Service Pack 6, made the mouse usable, gave it better graphics, and got it online. Now what?</p>
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
