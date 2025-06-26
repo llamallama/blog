@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/powerpc/</link>
     <description>Posts tagged with: PowerPC</description>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 14:25:20 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 14:31:14 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/powerpc/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
         <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
-        <atom:updated>2025-05-30T14:24:39-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><figcaption>Would you believe it feels faster than Windows 11?</figcaption><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
@@ -54,7 +54,7 @@
 <h2>Conclusion</h2>
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
 </channel>
 </rss>

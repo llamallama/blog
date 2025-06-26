@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/virtualization/</link>
     <description>Posts tagged with: Virtualization</description>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 14:25:20 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 14:31:14 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/virtualization/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
         <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
-        <atom:updated>2025-05-30T14:25:02-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:26:41-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><figcaption>Windows NT 4 Server Boot Screen</figcaption><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
@@ -241,7 +241,7 @@
 <p>We've installed the OS, set it up with better performing SCSI drivers, installed Service Pack 6, made the mouse usable, gave it better graphics, and got it online. Now what?</p>
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
-<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
     </item>
 </channel>
 </rss>
