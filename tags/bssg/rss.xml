@@ -5,8 +5,71 @@
     <link>https://blog.pipetogrep.org/tags/bssg/</link>
     <description>Posts tagged with: BSSG</description>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Jun 2025 13:31:21 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 18:13:20 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Blogging Like It&apos;s 1998</title>
+        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
+        <atom:updated>2025-06-26T18:07:40-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+<p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
+<p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
+<ul>
+<li>Pentium II CPU at 367 MHz</li>
+<li>320 MB RAM</li>
+<li>4 GB CF card as its hard drive</li>
+<li>ATI Mobility 1 (removable!) video card</li>
+<li>14 inch LCD at 1024x768</li>
+<li>Floppy disc/CD ROM combo module</li>
+<li>1 USB 1.1 Port</li>
+<li>2 PCMCIA card slots</li>
+</ul>
+<p>I am showing you this large, slow, 27 year old laptop because that is what I have written this blog post with. Not only was the text written on it, but it also edited all of the images, performed all the web research, generated all the HTML with a <a href="https://bssg.dragas.net/">static site generator</a>, uploaded a copy of the site to <a href="https://github.com/llamallama/blog">GitHub</a>, and kept all the blog files in sync with my server in real time. It even triggered a Kubernetes redeploy to take the changes live!</p>
+<h2>WTF! Why? How?!</h2>
+<p>The why is always the same. &quot;Because I can.&quot; But really, it's yet more proof of how wasteful the tech industry is and a challenge to myself to see if I could do everything required for this task entirely with this machine.</p>
+<p>So how is Chonk doing all of this? With the venerable <a href="https://www.openbsd.org/">OpenBSD</a>! OpenBSD supports older 32bit systems and has all the tools and packages required for my blog workflow natively available. Those tools are:</p>
+<ul>
+<li>Bash (For updating this site via <a href="https://bssg.dragas.net/">BSSG</a>)</li>
+<li>Git (Version Control)</li>
+<li>Vim (Text editing via command line)</li>
+<li>cmark (Markdown processor)</li>
+<li>kubectl (Updating the site via Kubernetes))</li>
+<li>Dillo (Tiny web browser)</li>
+<li>Scrot (Taking screenshots via command line)</li>
+<li>ImageMagick (Converting and resizing images via command line)</li>
+<li>Syncthing (Real time file sync tool)</li>
+<li>CWM (Super lightweight window manager)</li>
+</ul>
+<h2>Hardware</h2>
+<p>I got Chonk from <a href="https://vcfed.org/events/vintage-computer-festival-east/">VCF East</a> 2025. She was $40 and in perfect condition. She had no hard disk but otherwise functioned perfectly.</p>
+<p>To get her booting, I used a CF card to mini IDE adapter and an industrial CF card. To get her on the Internet, I used a USB 802.11n WiFi adapter coupled with PCMCIA USB 2 card. While she does have 1 USB port built in, it is USB 1.2 which would limit bandwidth to 12 Mb/s.</p>
+<h2>Software (OpenBSD)</h2>
+<p><a href="/images/chonk_screenshot.png"><img src="/images/chonk_screenshot.png" alt="OpenBSD Screenshot" /></a></p>
+<p>The setup itself was simple. It is a standard OpenBSD 7.7 i386 install and everything hardware wise just works. The biggest challenge is it is so very very slow. By slow I mean:</p>
+<ul>
+<li>OS install time: 45 minutes</li>
+<li>Boot time: 5 min 34 sec</li>
+<li>BSSG rebuild time: 2 - 3 minutes depending on what is cached</li>
+<li>Large HEIC to small JPG resize time: ~1 min per file</li>
+</ul>
+<p>Installing additional packages usually involved running the <code>pkg_add</code> command then walking away for a few minutes to do something else. This is due to the Pentium II being very slow with decompressing the TGZ (tar/gzip) packages.</p>
+<p>Once everything was installed and configured, however, Chonk makes for an excellent and distraction free blog writing tool. Dillo is just enough to look up stuff on the web. The ImageMagick tools slowly converted and scaled HEIC files from my iPhone to smaller JPGs. Syncthing keeps all the blog related files synced across my server and other computers. Vim is its usual fantastic self that runs on everything.</p>
+<p>Despite the slowness, at any given time, I still had 13-35 MB of free RAM and minimal swap usage. The only real concession I had to make was to only run Syncthing manually at the end of my writing sessions because it is by far the biggest RAM user at 66 MB. The actual writing process, however, was fast and comfortable.</p>
+<h2>Why not Linux or NetBSD?</h2>
+<p>I tried! <a href="http://tinycorelinux.net/">NetBSD</a> was my first choice but the installer failed to boot with some obscure message and I didn't feel like dealing with it.</p>
+<p>Next I tried <a href="http://tinycorelinux.net/">TinyCore Linux</a> which was much faster than OpenBSD in every way! The problem there was a lack of software availability. Cmark and Syncthing were not available and the versions the other standard tools BSSG relies on (awk, sed, etc.) are the BusyBox versions which may function differently than their full sized counterparts.</p>
+<h2>Conclusion</h2>
+<p>What did I get from this exercise? I learned the bare minimum required to do this task. I really enjoyed learning how to use the CWM window manager. I was once again impressed at how useful yet minimal the smaller BSD flavors are.</p>
+<p>Now enjoy some sexy action shots of Chonk. Work it girl!</p>
+<p><a href="/images/chonk_openbsd.jpg"><img src="/images/chonk_openbsd.jpg" alt="Chonk OpenBSD" /></a></p>
+<p><a href="/images/chonk_front_closed.jpg"><img src="/images/chonk_front_closed.jpg" alt="Chonk Front" /></a></p>
+<p><a href="/images/chonk_back.jpg"><img src="/images/chonk_back.jpg" alt="Chonk Back" /></a></p>
+<p><a href="/images/chonk_stickers.jpg"><img src="/images/chonk_stickers.jpg" alt="Chonk Stickers" /></a></p>
+<p>Want to discuss? Email me at blog@pipetogrep.org.</p>]]></description>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
+    </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
         <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
