@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites | The Pipetogrep Blog</title>
+    <meta name="description" content="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites">
+    <meta property="og:title" content="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites | The Pipetogrep Blog">
+    <meta property="og:description" content="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/">
+    <meta property="og:image" content="https://blog.pipetogrep.org/images/busybox_k8s.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites | The Pipetogrep Blog">
+    <meta name="twitter:description" content="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites">
+    <meta name="twitter:image" content="https://blog.pipetogrep.org/images/busybox_k8s.png">
+    <meta name="theme-color" content="#808080">
+    <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    <!-- bssg:tag_rss_link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites",
+  "datePublished": "2025-05-05T00:00:39-04:00",
+  "dateModified": "2025-05-05T00:54:10-04:00",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Jones",
+    "email": "anonymous@example.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Pipetogrep Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.pipetogrep.org/logo.png"
+    }
+  },
+  "description": "Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://blog.pipetogrep.org/images/busybox_k8s.png"
+  }
+}
+</script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="https://blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
+            <p>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</p>
+            <nav>
+                <a href="https://blog.pipetogrep.org/">Home</a> <a href="https://blog.pipetogrep.org/tags/">Tags</a> <a href="https://blog.pipetogrep.org/archives/">Archives</a> <a href="https://blog.pipetogrep.org/rss.xml">RSS</a>
+            </nav>
+        </header>
+        <main> <article class="post">
+  <h1>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</h1>
+<div class="page-meta">Published on: 2025-05-05 00:00:39 &bull; Updated on: 2025-05-05 00:54:10 &bull; 2 min read</div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="BusyBox + k8s = Love"><div class="image-caption">BusyBox + k8s = Love</div></div>
+<h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
+<p>Prerequisites:</p>
+<ul>
+<li>A functioning Kubernetes setup</li>
+<li>A <a href="https://bssg.dragas.net">BSSG</a> site running locally on your computer</li>
+<li>A GitHub repo created that contains your BSSG output. Mine is at https://github.com/llamallama/blog</li>
+</ul>
+<p>I just set up this blog using BSSG and decided to host it from my home lab. My lab runs a flavor of Kubernetes called <a href="https://k3s.io/">k3s</a>. Since this blog is static, I wanted to find the smallest tool set I could use to host it.</p>
+<p>That was when I learned that <a href="https://www.busybox.net/">busybox</a> has a all the tools required to do just that! Per BusyBox's site:</p>
+<pre><code>BusyBox combines tiny versions of many common UNIX utilities into a single
+small executable. It provides replacements for most of the utilities you 
+usually find in GNU fileutils, shellutils, etc. The utilities in BusyBox 
+generally have fewer options than their full-featured GNU cousins; however,
+the options that are included provide the expected functionality and behave
+very much like their GNU counterparts. BusyBox provides a fairly complete
+environment for any small or embedded system.
+</code></pre>
+<p>Note that it says <em>embedded</em> systems, so this is probably not the most production ready or most performant way to do host a static site, but that is what puts the &quot;lab&quot; in &quot;home lab&quot;. Experimentation!</p>
+<p>Not only can it host the site, but it can also download the code from GitHub. The way this is done will be via three of BusyBox's many utilities: <strong>http</strong>, <strong>wget</strong>, and <strong>unzip</strong>.</p>
+<p>Enough preamble, here's the setup.</p>
+<h2>Kubernetes</h2>
+<p>Set up a standard k8s deployment and use this for the container spec, adjusting to suit your GitHub and k8s setup</p>
+<pre><code>spec:
+  containers:
+  - name: blog
+    # Launch busybox httpd
+    command: [httpd]
+    # Run httpd as the www-data user, in the foreground, in verbose mode, on port 8000
+    args: [ -u, www-data, -f, -v, -p, &quot;8000&quot;]
+    image: busybox:1.37
+    workingDir: /var/www
+    ports:
+    - containerPort: 8000
+      name: tcp8000
+      protocol: TCP
+    lifecycle:
+      postStart:
+        exec:
+          command:
+          - sh
+          - -c
+          - |
+            mkdir -p /usr/local/bin;
+            '#!/bin/sh';
+            set -e;
+            wget https://github.com/llamallama/blog/archive/refs/heads/main.zip -O /tmp/main.zip;
+            rm -rf /var/www/*;
+            unzip /tmp/main.zip;
+            mv blog-main/* ./;
+            rm -rf blog-main /tmp/main.zip;
+</code></pre>
+<p>In this example we are using the official busybox image and setting the workingDir to <code>/var/www</code> and having BusyBox's httpd serve the static content in /var/www. The real magic happens in the postStart lifecycle hook. It uses BusyBox's wget to download the main GitHub branch as a zip file, unzip it, and move the files to /var/www.</p>
+<p>How we populate /var/www with our site happens next.</p>
+<h2>Deploy from BSSG</h2>
+<p>In your BSSG <code>scripts/</code> folder, create a file called <code>deploy.sh</code> and make it look like this, adjusting it to fit your setup.</p>
+<pre><code>#!/usr/bin/env bash
+
+set -eu -o pipefail
+
+# Set our dirs
+output_dir=~/personal/blog/output
+git_dir=~/personal/blog.git
+
+# Clear the Git dir and copy the BSSG output to it
+rm -rf &quot;$git_dir&quot;/*
+cp -R &quot;$output_dir&quot;/* &quot;$git_dir&quot;/
+
+# Add, commit, and push to GitHub
+cd &quot;$git_dir&quot;
+git add .
+git commit -am &quot;Update $(date)&quot;
+git push origin main
+
+# Redeploy the container
+kubectl rollout restart deployment/blog
+</code></pre>
+<p>On my setup <code>~/personal/blog/output</code> contains my BSSG output. <code>~/personal/blog.git</code> is my Git repo working copy and started empty. The above script copies our blog output to our Git working copy, commits, pushes, and then uses kubectl to create a new pod in our deployment, which will run the postStart lifecycle hook again, which will get the latest site content.</p>
+<div class="tags"> <a href="https://blog.pipetogrep.org/tags/kubernetes/" class="tag">Kubernetes</a> <a href="https://blog.pipetogrep.org/tags/bssg/" class="tag">BSSG</a></div>
+</article>        </main>
+        <footer>
+            <p>&copy; 2025 Chris Jones. All rights reserved.</p>
+            <p>This site was generated with <a href="https://bssg.dragas.net">BSSG</a>, a Bash Static Site Generator.</p>
+            <p>
+                <a href="https://blog.pipetogrep.org/">Home</a> &middot; <a href="https://blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="https://blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="https://blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
+            </p>
+            <p><a href="#">Back to Top</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
