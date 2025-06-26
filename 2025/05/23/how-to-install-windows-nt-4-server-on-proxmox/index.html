@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "How to Install Windows NT 4 Server on Proxmox",
   "datePublished": "2025-05-23T18:41:50-04:00",
-  "dateModified": "2025-05-26T14:54:40-04:00",
+  "dateModified": "2025-05-26T22:07:55-04:00",
   "author": {
     "@type": "Person",
     "name": "Chris Jones",
@@ -65,7 +65,7 @@
         </header>
         <main> <article class="post">
   <h1>How to Install Windows NT 4 Server on Proxmox</h1>
-<div class="page-meta">Published on: 2025-05-23 18:41:50 &bull; Updated on: 2025-05-26 14:54:40 &bull; 5 min read</div>
+<div class="page-meta">Published on: 2025-05-23 18:41:50 &bull; Updated on: 2025-05-26 22:07:55 &bull; 5 min read</div>
 <div class="featured-image"><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="Windows NT 4 Server Boot Screen"><div class="image-caption">Windows NT 4 Server Boot Screen</div></div>
 <h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
@@ -154,19 +154,19 @@
 </code></pre>
 <h2>OS Installation</h2>
 <ol>
-<li>Switch to the VM's console, start the VM, then begin pressing F6 when you see the Proxmox logo. Keep pressing until you see this screen.
-<a href="/images/win_nt_f6_boot.png"><img src="/images/win_nt_f6_boot.png" alt="DLL File Corruption" /></a></li>
-<li>Press the <strong>S</strong> key.</li>
-<li>Select <strong>Other</strong>
-<a href="/images/win_nt_other.png"><img src="/images/win_nt_other.png" alt="Other" /></a></li>
-<li>Press <strong>Enter</strong>
-<a href="/images/win_nt_insert.png"><img src="/images/win_nt_insert.png" alt="Insert Disk" /></a></li>
-<li>Press <strong>Enter</strong> again to select <strong>Symbios PCI SCSI High Performance Driver</strong>
-<a href="/images/win_nt_scsi_driver.png"><img src="/images/win_nt_scsi_driver.png" alt="SCSI Driver" /></a></li>
-<li>You should now see <strong>Symbios PCI SCSI High Performance Driver</strong> in the list of mass storage devices. Press <strong>Enter</strong>.
-<a href="/images/win_nt_mass_storage.png"><img src="/images/win_nt_mass_storage.png" alt="Mass Storage Devices" /></a></li>
-<li>Continue through the installation steps being sure to format the drive as <strong>NTFS</strong>.</li>
+<li>Switch to the VM's console, start the VM, then begin pressing F6 when you see the Proxmox logo. Keep pressing until you see this screen.</li>
 </ol>
+<p><a href="/images/win_nt_f6_boot.png"><img src="/images/win_nt_f6_boot.png" alt="DLL File Corruption" /></a>
+2. Press the <strong>S</strong> key.
+3. Select <strong>Other</strong></p>
+<p><a href="/images/win_nt_other.png"><img src="/images/win_nt_other.png" alt="Other" /></a>
+4. Press <strong>Enter</strong></p>
+<p><a href="/images/win_nt_insert.png"><img src="/images/win_nt_insert.png" alt="Insert Disk" /></a>
+5. Press <strong>Enter</strong> again to select <strong>Symbios PCI SCSI High Performance Driver</strong></p>
+<p><a href="/images/win_nt_scsi_driver.png"><img src="/images/win_nt_scsi_driver.png" alt="SCSI Driver" /></a>
+6. You should now see <strong>Symbios PCI SCSI High Performance Driver</strong> in the list of mass storage devices. Press <strong>Enter</strong>.</p>
+<p><a href="/images/win_nt_mass_storage.png"><img src="/images/win_nt_mass_storage.png" alt="Mass Storage Devices" /></a>
+7. Continue through the installation steps being sure to format the drive as <strong>NTFS</strong>.</p>
 <p>When the graphical installer comes up, you will notice the mouse is difficult to use. We will fix that in a later step. Struggle with the mouse or use the keyboard for the rest of the installation.</p>
 <ol start="8">
 <li>Continue the installation until you get to the Network Adapter search screen. Click <strong>Select from list...</strong>
