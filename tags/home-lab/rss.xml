@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/home-lab/</link>
     <description>Posts tagged with: Home Lab</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 22:16:01 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 14:25:20 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/home-lab/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
         <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
-        <atom:updated>2025-05-26T22:14:03-04:00</atom:updated>
+        <atom:updated>2025-05-30T14:24:11-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><figcaption>Retro LAN Diagram</figcaption><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
@@ -158,7 +158,8 @@ setup for this will be done on a network external to the one that pfSense is on.
 <h2>Testing Your Work</h2>
 <p>It is time to plug a network cable into the FreshTomato device. This will <strong>only</strong> work by plugging into <strong>LAN1</strong> as that is the port the TAP connection is bridged to. Upon plugging in, the machine should receive an address in the 192.168.30.* range.</p>
 <p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
-<p>Have fun!</p>]]></description>
+<p>Have fun!</p>
+<p>Want to discuss? Email me at <a href="blog@pipetogrep.org">mailto:blog@pipetogrep.org</a>.</p>]]></description>
     </item>
 </channel>
 </rss>
