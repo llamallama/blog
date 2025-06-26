@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/guides/</link>
     <description>Posts tagged with: Guides</description>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 19:49:11 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 19:51:37 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/guides/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
@@ -13,7 +13,7 @@
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
         <atom:updated>2025-05-08T21:29:05-04:00</atom:updated>
-        <description><![CDATA[Building a safe and secure retro LAN spanning multiple states]]></description>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><figcaption>Retro LAN Diagram</figcaption>Building a safe and secure retro LAN spanning multiple states]]></description>
     </item>
 </channel>
 </rss>
