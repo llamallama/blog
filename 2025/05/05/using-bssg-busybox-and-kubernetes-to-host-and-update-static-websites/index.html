@@ -65,7 +65,7 @@
         </header>
         <main> <article class="post">
   <h1>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</h1>
-<div class="page-meta">Published on: 2025-05-05 00:00:39 &bull; Updated on: 2025-05-05 00:54:10 &bull; 2 min read</div>
+<div class="page-meta">Published on: 2025-05-05 00:00:39 &bull; Updated on: 2025-05-05 00:54:10 &bull; 3 min read</div>
 <div class="featured-image"><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="BusyBox + k8s = Love"><div class="image-caption">BusyBox + k8s = Love</div></div>
 <h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
@@ -96,7 +96,7 @@ environment for any small or embedded system.
     command: [httpd]
     # Run httpd as the www-data user, in the foreground, in verbose mode, on port 8000
     args: [ -u, www-data, -f, -v, -p, &quot;8000&quot;]
-    image: busybox:1.37
+    image: busybox
     workingDir: /var/www
     ports:
     - containerPort: 8000
@@ -119,7 +119,7 @@ environment for any small or embedded system.
             rm -rf blog-main /tmp/main.zip;
 </code></pre>
 <p>In this example we are using the official busybox image and setting the workingDir to <code>/var/www</code> and having BusyBox's httpd serve the static content in /var/www. The real magic happens in the postStart lifecycle hook. It uses BusyBox's wget to download the main GitHub branch as a zip file, unzip it, and move the files to /var/www.</p>
-<p>How we populate /var/www with our site happens next.</p>
+<p>Obviously there are some part missing here. Service and ingress settings chief among them, but those are outside of the scope of this post. The relevant parts are the use of BusyBox and the postStart hook.</p>
 <h2>Deploy from BSSG</h2>
 <p>In your BSSG <code>scripts/</code> folder, create a file called <code>deploy.sh</code> and make it look like this, adjusting it to fit your setup.</p>
 <pre><code>#!/usr/bin/env bash
@@ -143,7 +143,13 @@ git push origin main
 # Redeploy the container
 kubectl rollout restart deployment/blog
 </code></pre>
-<p>On my setup <code>~/personal/blog/output</code> contains my BSSG output. <code>~/personal/blog.git</code> is my Git repo working copy and started empty. The above script copies our blog output to our Git working copy, commits, pushes, and then uses kubectl to create a new pod in our deployment, which will run the postStart lifecycle hook again, which will get the latest site content.</p>
+<p>On my setup <code>~/personal/blog/output</code> contains my BSSG output. <code>~/personal/blog.git</code> is my Git repo working copy which started empty. The above script copies our blog output to our Git working copy, commits, pushes, and then uses kubectl to redeploy the pod, which will run the postStart lifecycle hook again, which will get the latest site content.</p>
+<p>Next I run</p>
+<pre><code>./bssg.sh build --deploy --site-url &quot;https://blog.pipetogrep.org&quot;
+</code></pre>
+<h2>Conclusion</h2>
+<p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
+<p>Why did I do it like this? Because I can and I wanted to!</p>
 <div class="tags"> <a href="https://blog.pipetogrep.org/tags/kubernetes/" class="tag">Kubernetes</a> <a href="https://blog.pipetogrep.org/tags/bssg/" class="tag">BSSG</a></div>
 </article>        </main>
         <footer>
