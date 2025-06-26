@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE Drive Adapters and Picky Retro Computers | The Pipetogrep Blog</title>
+    <meta name="description" content="I was afraid my diva of a retro laptop would only accept spinning rust.">
+    <meta property="og:title" content="IDE Drive Adapters and Picky Retro Computers | The Pipetogrep Blog">
+    <meta property="og:description" content="I was afraid my diva of a retro laptop would only accept spinning rust.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/06/ide-drive-adapters-and-picky-retro-computers/">
+    <meta property="og:image" content="https://blog.pipetogrep.org/images/drake_cf_cards.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="IDE Drive Adapters and Picky Retro Computers | The Pipetogrep Blog">
+    <meta name="twitter:description" content="I was afraid my diva of a retro laptop would only accept spinning rust.">
+    <meta name="twitter:image" content="https://blog.pipetogrep.org/images/drake_cf_cards.jpg">
+    <meta name="theme-color" content="#808080">
+    <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    <!-- bssg:tag_rss_link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "IDE Drive Adapters and Picky Retro Computers",
+  "datePublished": "2025-05-06T00:50:10-04:00",
+  "dateModified": "2025-05-06T01:48:30-04:00",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Jones",
+    "email": "anonymous@example.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Pipetogrep Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.pipetogrep.org/logo.png"
+    }
+  },
+  "description": "I was afraid my diva of a retro laptop would only accept spinning rust.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://blog.pipetogrep.org/images/drake_cf_cards.jpg"
+  }
+}
+</script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="https://blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
+            <p>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</p>
+            <nav>
+                <a href="https://blog.pipetogrep.org/">Home</a> <a href="https://blog.pipetogrep.org/tags/">Tags</a> <a href="https://blog.pipetogrep.org/archives/">Archives</a> <a href="https://blog.pipetogrep.org/rss.xml">RSS</a>
+            </nav>
+        </header>
+        <main> <article class="post">
+  <h1>IDE Drive Adapters and Picky Retro Computers</h1>
+<div class="page-meta">Published on: 2025-05-06 00:50:10 &bull; Updated on: 2025-05-06 01:48:30 &bull; 2 min read</div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" alt="Removable, no. Fixed, yes."><div class="image-caption">Removable, no. Fixed, yes.</div></div>
+<p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds. It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
+<p>I'm no stranger to using IDE adapters that convert relatively modern media like SD cards or SATA SSDs to work as a laptop IDE drive. I tried one of the latter, but no luck. The Dell saw no hard drive in its BIOS settings. What's worse is the BIOS is extremely limited, only allowing for auto drive detection.</p>
+<p>After some research, I decided to go with the Compact Flash (CF) Card to IDE adapter route. It turns out that CF Cards can behave exactly like an IDE drive. In fact, CF to IDE adapters have no chips on them, only traces to convert the CF Card pinout to IDE.</p>
+<p>That still didn't work. After trying multiple CF cards (8GB and under) and multiple CF to IDE adapters, I was ready to purchase some old spinning rust of dubious quality off of eBay or either give up. Then I learned is that CF Cards have two modes, removable and fixed.</p>
+<p>While some computers will boot from CF cards in removable mode, others will only allow booting from a card in fixed disk mode. That left me with two options. Purchase an industrial grade CF card (expensive mistake if it didn't work) or try to convert an existing CF Card.</p>
+<p>Why an industrial CF card? Not only are they more reliable with their SLC NAND, but they default to fixed mode. Before going that route, I decided to try and convert a removable consumer grade card. But how do we convert it?</p>
+<p>An old utility created by Sandisk that does exactly that called <a href="https://vogonsdrivers.com/getfile.php?fileid=1862">ATCFWCHG</a>. Problem is, there are not many CF cards it will work on. Per <a href="https://www.vogons.org/viewtopic.php?p=1326309#p1326309">this Vogons post</a>, I purchased this known convertible card to test with.</p>
+<p><img src="/images/cf_card_2pb.jpg" alt="SanDisk Ultra II 2GB" /></p>
+<p>I installed the card with an IDE CF card adapter into another vintage machine that did recognize it, booted it from DOS and ran the <code>ATCFWCHG /P /F</code>. After seeing it fail on all the other cards I tried previously, I finally got to see some success.</p>
+<p><img src="/images/atcfwchg.jpg" alt="ATCFWCHG Success" /></p>
+<p>After that, the Dell Inspiron 7000 saw the card as available and bootable. Knowing that it works, I purchased a higher capacity industrial card. I look forward to writing more about this machine soon!</p>
+<div class="tags"> <a href="https://blog.pipetogrep.org/tags/retro-computing/" class="tag">Retro Computing</a></div>
+</article>        </main>
+        <footer>
+            <p>&copy; 2025 Chris Jones. All rights reserved.</p>
+            <p>This site was generated with <a href="https://bssg.dragas.net">BSSG</a>, a Bash Static Site Generator.</p>
+            <p>
+                <a href="https://blog.pipetogrep.org/">Home</a> &middot; <a href="https://blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="https://blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="https://blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
+            </p>
+            <p><a href="#">Back to Top</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
