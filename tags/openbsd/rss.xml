@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/openbsd/</link>
     <description>Posts tagged with: OpenBSD</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 18:13:27 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 18:19:29 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/openbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Blogging Like It&apos;s 1998</title>
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
-        <atom:updated>2025-06-26T18:07:40-04:00</atom:updated>
+        <atom:updated>2025-06-26T18:17:47-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
@@ -67,7 +67,7 @@
 <p><a href="/images/chonk_front_closed.jpg"><img src="/images/chonk_front_closed.jpg" alt="Chonk Front" /></a></p>
 <p><a href="/images/chonk_back.jpg"><img src="/images/chonk_back.jpg" alt="Chonk Back" /></a></p>
 <p><a href="/images/chonk_stickers.jpg"><img src="/images/chonk_stickers.jpg" alt="Chonk Stickers" /></a></p>
-<p>Want to discuss? Email me at blog@pipetogrep.org.</p>]]></description>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
