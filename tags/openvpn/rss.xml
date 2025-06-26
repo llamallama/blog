@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - Posts tagged with: OpenVPN</title>
+    <link>https://blog.pipetogrep.org/tags/openvpn/</link>
+    <description>Posts tagged with: OpenVPN</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 19:49:12 -0400</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/openvpn/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
+        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
+        <atom:updated>2025-05-08T21:29:05-04:00</atom:updated>
+        <description><![CDATA[Building a safe and secure retro LAN spanning multiple states]]></description>
+    </item>
+</channel>
+</rss>
