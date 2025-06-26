@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - Posts tagged with: stuff</title>
+    <link>http://localhost:8000/tags/stuff/</link>
+    <description>Posts tagged with: stuff</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 May 2025 21:34:55 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/stuff/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>I like puters</title>
+        <link>http://localhost:8000/2025/05/03/i-like-puters/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/03/i-like-puters/</guid>
+        <pubDate>Sat, 03 May 2025 21:34:30 -0400</pubDate>
+        <atom:updated>2025-05-03T21:34:30-04:00</atom:updated>
+        <description><![CDATA[This is a heading]]></description>
+    </item>
+</channel>
+</rss>
