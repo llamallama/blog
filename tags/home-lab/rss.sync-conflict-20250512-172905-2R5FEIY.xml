@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Pipetogrep Blog - Posts tagged with: Home Lab</title>
+    <link>http://localhost:8000/tags/home-lab/</link>
+    <description>Posts tagged with: Home Lab</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 20:04:37 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/home-lab/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
+        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
+        <atom:updated>2025-05-08T21:29:05-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><figcaption>Retro LAN Diagram</figcaption>Building a safe and secure retro LAN spanning multiple states]]></description>
+    </item>
+</channel>
+</rss>
