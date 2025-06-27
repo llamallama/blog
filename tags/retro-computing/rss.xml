@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/retro-computing/</link>
     <description>Posts tagged with: Retro Computing</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 18:40:24 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 22:17:38 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Blogging Like It&apos;s 1998</title>
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
-        <atom:updated>2025-06-26T18:17:47-04:00</atom:updated>
+        <atom:updated>2025-06-26T22:16:49-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
@@ -58,7 +58,7 @@
 <p>Once everything was installed and configured, however, Chonk makes for an excellent and distraction free blog writing tool. Dillo is just enough to look up stuff on the web. The ImageMagick tools slowly converted and scaled HEIC files from my iPhone to smaller JPGs. Syncthing keeps all the blog related files synced across my server and other computers. Vim is its usual fantastic self that runs on everything.</p>
 <p>Despite the slowness, at any given time, I still had 13-35 MB of free RAM and minimal swap usage. The only real concession I had to make was to only run Syncthing manually at the end of my writing sessions because it is by far the biggest RAM user at 66 MB. The actual writing process, however, was fast and comfortable.</p>
 <h2>Why not Linux or NetBSD?</h2>
-<p>I tried! <a href="http://tinycorelinux.net/">NetBSD</a> was my first choice but the installer failed to boot with some obscure message and I didn't feel like dealing with it.</p>
+<p>I tried! <a href="https://www.netbsd.org/">NetBSD</a> was my first choice but the installer failed to boot with some obscure message and I didn't feel like dealing with it.</p>
 <p>Next I tried <a href="http://tinycorelinux.net/">TinyCore Linux</a> which was much faster than OpenBSD in every way! The problem there was a lack of software availability. Cmark and Syncthing were not available and the versions the other standard tools BSSG relies on (awk, sed, etc.) are the BusyBox versions which may function differently than their full sized counterparts.</p>
 <h2>Conclusion</h2>
 <p>What did I get from this exercise? I learned the bare minimum required to do this task. I really enjoyed learning how to use the CWM window manager. I was once again impressed at how useful yet minimal the smaller BSD flavors are.</p>
@@ -305,7 +305,7 @@
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
@@ -355,7 +355,7 @@
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
@@ -510,7 +510,7 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
 <p>Have fun!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>IDE Drive Adapters and Picky Retro Computers</title>
@@ -530,7 +530,7 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p><img src="/images/atcfwchg.jpg" alt="ATCFWCHG Success" /></p>
 <p>After that, the Dell Inspiron 7000 saw the card as available and bootable. Knowing that it works, I purchased a higher capacity industrial card. I look forward to writing more about this machine soon!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
 </rss>
