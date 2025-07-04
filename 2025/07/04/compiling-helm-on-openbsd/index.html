@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World! | The Pipetogrep Blog</title>
-    <meta name="description" content="My first Post using BSSG">
-    <meta property="og:title" content="Hello World! | The Pipetogrep Blog">
-    <meta property="og:description" content="My first Post using BSSG">
+    <title>Compiling Helm on OpenBSD | The Pipetogrep Blog</title>
+    <meta name="description" content="How to build and run Helm on OpenBSD">
+    <meta property="og:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
+    <meta property="og:description" content="How to build and run Helm on OpenBSD">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/03/hello-world/">
-    
+    <meta property="og:url" content="https://blog.pipetogrep.org//2025/07/04/compiling-helm-on-openbsd/">
+    <meta property="og:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hello World! | The Pipetogrep Blog">
-    <meta name="twitter:description" content="My first Post using BSSG">
-    
+    <meta name="twitter:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
+    <meta name="twitter:description" content="How to build and run Helm on OpenBSD">
+    <meta name="twitter:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
     <meta name="theme-color" content="#808080">
     <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
@@ -21,9 +21,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Hello World!",
-  "datePublished": "2025-05-03T21:20:12-04:00",
-  "dateModified": "2025-05-05T00:48:39-04:00",
+  "headline": "Compiling Helm on OpenBSD",
+  "datePublished": "2025-07-04T17:03:14-04:00",
+  "dateModified": "2025-07-04T17:03:14-04:00",
   "author": {
     "@type": "Person",
     "name": "Chris Jones",
@@ -37,11 +37,15 @@
       "url": "https://blog.pipetogrep.org/logo.png"
     }
   },
-  "description": "My first Post using BSSG",
+  "description": "How to build and run Helm on OpenBSD",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://blog.pipetogrep.org/2025/05/03/hello-world/"
-  }}
+    "@id": "https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://blog.pipetogrep.org/images/helm_openbsd.png"
+  }
 }
 </script>
     
@@ -56,11 +60,20 @@
             </nav>
         </header>
         <main> <article class="post">
-  <h1>Hello World!</h1>
-<div class="page-meta"><p class="meta">Published on: <time datetime="2025-05-03 21:20:12 -0400">2025-05-03 21:20:12</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-05-05 00:48:39 -0400">2025-05-05 00:48:39</time> &bull; 1 min read</p></div>
-
-<p>Hello and welcome to blog.pipetogrep.org. I started this to write about my misadventures in retrocomputing but I'm sure I'll have plenty of other stuff in here too. This post is here to prove to myself that I can manage a blog via <a href="https://bssg.dragas.net/">BSSG</a>. I love the idea of simplistic tools to do complicated tasks and abuses of Bash shell scripting and BSSG scratches both of those itches for me. Thank you for visiting and hopefully you'll find something of value or entertainment here.</p>
-<div class="tags"> <a href="https://blog.pipetogrep.org/tags/general/" class="tag">General</a> <a href="https://blog.pipetogrep.org/tags/bssg/" class="tag">BSSG</a></div>
+  <h1>Compiling Helm on OpenBSD</h1>
+<div class="page-meta"><p class="meta">Published on: <time datetime="2025-07-04 17:03:14 -0400">2025-07-04 17:03:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">1 min read</p></div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Helm + OpenBSD"><div class="image-caption">Helm + OpenBSD</div></div>
+<p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
+<h2>Build Steps</h2>
+<pre><code>pkg_add git gmake bash
+git clone https://github.com/helm/helm
+cd helm
+gmake
+doas gmake install
+</code></pre>
+<p>After that, helm should be installed to <code>/usr/local/bin/</code></p>
+<p>That's it!</p>
+<div class="tags"> <a href="https://blog.pipetogrep.org/tags/openbsd/" class="tag">OpenBSD</a> <a href="https://blog.pipetogrep.org/tags/kubernetes/" class="tag">Kubernetes</a></div>
 <section class="related-posts">
 <h3>Related Posts</h3>
 <div class="related-posts-list">

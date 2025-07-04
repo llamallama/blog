@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/networking/</link>
     <description>Posts tagged with: Networking</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 18:39:43 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 17:57:37 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/networking/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
@@ -160,7 +160,7 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
 <p>Have fun!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
 </rss>

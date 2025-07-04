@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/virtualization/</link>
     <description>Posts tagged with: Virtualization</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 18:40:43 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 17:57:37 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/virtualization/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
@@ -242,7 +242,7 @@
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
 </rss>

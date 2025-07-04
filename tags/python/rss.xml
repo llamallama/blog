@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/tags/python/</link>
     <description>Posts tagged with: Python</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 18:40:16 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 17:57:37 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/python/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
@@ -55,7 +55,7 @@
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-        <dc:creator>Chris Jones (anonymous@example.com)</dc:creator>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
 </rss>

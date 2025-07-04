@@ -5,8 +5,26 @@
     <link>https://blog.pipetogrep.org/</link>
     <description>I&apos;m Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Jun 2025 22:17:39 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 17:57:38 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Compiling Helm on OpenBSD</title>
+        <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
+        <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
+        <atom:updated>2025-07-04T17:03:14-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
+<h2>Build Steps</h2>
+<pre><code>pkg_add git gmake bash
+git clone https://github.com/helm/helm
+cd helm
+gmake
+doas gmake install
+</code></pre>
+<p>After that, helm should be installed to <code>/usr/local/bin/</code></p>
+<p>That's it!</p>]]></description>
+        <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
+    </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
