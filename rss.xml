@@ -5,7 +5,7 @@
     <link>https://blog.pipetogrep.org/</link>
     <description>I&apos;m Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Jul 2025 17:57:38 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 18:21:45 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Compiling Helm on OpenBSD</title>
@@ -30,12 +30,12 @@ doas gmake install
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
-        <atom:updated>2025-06-26T22:16:49-04:00</atom:updated>
+        <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>
-<li>Pentium II CPU at 367 MHz</li>
+<li>Pentium II CPU at 366 MHz</li>
 <li>320 MB RAM</li>
 <li>4 GB CF card as its hard drive</li>
 <li>ATI Mobility 1 (removable!) video card</li>
