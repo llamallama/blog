@@ -5,20 +5,20 @@
     <link>https://blog.pipetogrep.org/tags/netbsd/</link>
     <description>Posts tagged with: NetBSD</description>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Jul 2025 00:07:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jul 2025 00:31:45 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/netbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Using AI to Enhance the Retro Computing Experience</title>
         <link>https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
         <pubDate>Sun, 13 Jul 2025 23:35:35 -0400</pubDate>
-        <atom:updated>2025-07-14T00:02:06-04:00</atom:updated>
+        <atom:updated>2025-07-14T00:31:31-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
 <p>Accessing ChatGPT from the command line on various flavors of Unix like operating systems is nothing new. I found an interesting use for it today that I had not previously considered. That is to make researching from a retro computer possible where it would normally be not be so.</p>
 <p>For example, as previously discussed in my post <a href="/2025/05/14/netbsd-ibooks-python-oh-my/">NetBSD &amp; iBooks &amp; Python, oh my!</a>, I like to use old hardware for useful things like, in this case, a Pygame development machine. That works great but the problem is that I'm not very good at Python and have to look up lots of stuff. Since I don't have access to a modern browser available on this machine, this is my usual experience especially when Stack Overflow comes into the picture.</p>
 <p><a href="/images/brick_ai2.png"><img src="/images/brick_ai2.png" alt="No Stack Overflow without cookies or JavaScript" /></a></p>
 <h2>The AI Workaround</h2>
-<p>Thankfully, <a href="https://github.com/0xacx/chatGPT-shell-cli">chatGPT-shell-cli</a> exists in NetBSD's package repos and works great on my PowerPC iBook. It's dependencies are very light requiring only Bash, jq (a command line JSON parser), and curl. If you wanted to, you could even do this on old OS X with Macports!</p>
+<p>Thankfully, <a href="https://github.com/0xacx/chatGPT-shell-cli">chatGPT-shell-cli</a> exists in NetBSD's package repos and works great on my PowerPC iBook. Its dependencies are very light requiring only Bash, jq (a command line JSON parser), and curl. If you wanted to, you could even do this on old OS X with Macports!</p>
 <p>Here are a couple screenshots of it in action!</p>
 <p><a href="/images/brick_ai3.png"><img src="/images/brick_ai3.png" alt="ChatGPT on NetBSD Screenshot 1" /></a>
 <a href="/images/brick_ai4.png"><img src="/images/brick_ai4.png" alt="ChatGPT on NetBSD Screenshot 2" /></a></p>
