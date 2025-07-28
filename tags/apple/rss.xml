@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/apple/</link>
     <description>Posts tagged with: Apple</description>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jul 2025 22:45:38 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jul 2025 23:06:36 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/apple/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
         <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
         <pubDate>Sun, 27 Jul 2025 19:21:39 -0400</pubDate>
-        <atom:updated>2025-07-27T22:41:10-04:00</atom:updated>
+        <atom:updated>2025-07-27T23:06:25-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
 <p>I used worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
 <h2>When I Went Back to IT</h2>
@@ -79,7 +79,8 @@
 <h2>What Did I Learn?</h2>
 <p>A lot! Most importantly, maintain a real inventory system instead of just a spreadsheet. If that was done from the beginning, this whole thing might not have happened. I also learned about Apple Business manager, how Apple MDM software works at a low level, and how IT departments manage large fleets of devices. I learned that if something feels off, it is worth investigating. Most importantly, I learned that an engineer's natural curiosity is applicable to more that just engineering. The more I dug into what Jim said, the more lies I found.</p>
 <h2>What Did Jim Learn?</h2>
-<p>Something I hope. If he simply maintained that he didn't know anything, he might have gotten further with his ruse. Instead, he kept talking and kept digging himself deeper. At the most, I can hope that he learned not to pull this crap anymore in the future. At the very least, he learned not to lie to me.</p>]]></description>
+<p>Something I hope. If he simply maintained that he didn't know anything, he might have gotten further with his ruse. Instead, he kept talking and kept digging himself deeper. At the most, I can hope that he learned not to pull this crap anymore in the future. At the very least, he learned not to lie to me.</p>
+<p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
