@@ -5,21 +5,21 @@
     <link>https://blog.pipetogrep.org/tags/apple/</link>
     <description>Posts tagged with: Apple</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Jul 2025 22:39:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 12:27:30 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/apple/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
         <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
         <pubDate>Sun, 27 Jul 2025 19:21:39 -0400</pubDate>
-        <atom:updated>2025-07-28T22:36:41-04:00</atom:updated>
+        <atom:updated>2025-07-29T12:18:37-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
-<p>I used worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
+<p>I used to worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
 <h2>When I Went Back to IT</h2>
 <p>I was burning out on my position as a DevOps Engineer. Instead of looking for yet another job doing the same thing, I asked my boss if I could fill a different role temporarily so I could reset while still being useful to the company. He agreed and asked what I had in mind.</p>
 <p>The company's IT manager was leaving and the whole department's staff, tools, and processes really needed some attention. I volunteered to be the interim IT manager that handled banging the department back into shape. He liked the idea so I got started.</p>
 <h2>The Contractor</h2>
-<p>The only one left in the IT department was a single IT contractor that we will call Jim. Jim had been with the company for a little over a year. As I got to know Jim, I discovered that everything under his watch was falling apart. The IT closet was a gigantic mess, he was rarely available during working hours, he worked on who knows what at the office during the evening, and wasn't helpful when he was assisting with IT related issues.</p>
+<p>The only one left in the IT department was a single IT contractor that we will call Jim. Jim had been with the company for a little over a year. As I got to know Jim, I discovered that everything under his watch was falling apart. The IT closet was a gigantic mess. He was rarely available during working hours, he worked on who knows what at the office during the evening, and wasn't helpful when he was assisting with IT related issues.</p>
 <p>I gave him the benefit of the doubt and figured that his department was understaffed and overworked for too long so the first order of business was to assemble a new team.</p>
 <h2>The New Team Assembles</h2>
 <p>After a month of helping with IT tickets basically on my own (Jim was often MIA), and after cleaning out the IT closet, I hired a new IT manager and support specialist. During their first week, I gave them a tour of the office including the newly reorganized IT closet. That was when I first noticed something was amiss.</p>
@@ -28,7 +28,7 @@
 <p>To keep everything transparent and out in the open, I started a thread in the IT discussion Slack channel asking about the missing laptops and requested everyone on the team to speak up in the thread if they knew anything about it. My boss knew nothing. He could not since he works remotely. The new hires didn't know anything either since this was the first day they were seeing the IT closet.</p>
 <p>Then Jim messages me, not in the thread but via DM.</p>
 <p><a href="/images/laptop_thief1.png"><img src="/images/laptop_thief1.png" alt="Lies" /></a></p>
-<p>He's telling me five of the laptops had dead batteries on arrival while the sixth went out to an employee. That was the first thing that didn't add up. Five out of fifteen brand new, sealed in box, Apple laptops were dead on arrival? I know Apple's hardware isn't the most resilient but that failure rate is unheard for them.</p>
+<p>He's telling me five of the laptops had dead batteries on arrival while the sixth went out to an employee. That was the first thing that didn't add up. Five out of fifteen brand new, sealed in box Apple laptops were dead on arrival? I know Apple's hardware isn't the most resilient, but that failure rate is unheard for them.</p>
 <p>In the message he sent me five Apple repair case IDs. Upon looking them up, I see that they were suspiciously created right after I sent out the message about the missing devices. Even more suspicious, I find out that he created the repair requests under his personal Apple account rather than the company account, preventing me from gathering more information about the requests.</p>
 <h2>The Lies Continue</h2>
 <p>The next day, two FedEx boxes arrive containing two brand new MacBooks. The FedEx label said it was from Apple's 5th Ave store in Manhattan (which was walking distance from the office). There were two things odd about these machines:</p>
@@ -47,13 +47,13 @@
 <ul>
 <li>&quot;I believe 2 of the defective laptops have been replaced and should be at the office right now.&quot; - Two laptops did arrive to the office, but they did not belong to the company. They belonged to him.</li>
 <li>&quot;Once again, I do no take laptops home at all.&quot; - Then why did he have the Apple repair boxes sent to his home address?</li>
-<li>The FexEx labels were clearly a cover. The from address was spoofed to look like Apple. The FedEx tracking for them never got past the label being created which means Jim hand delivered them to the office (no cost that way).</li>
+<li>The FedEx labels were clearly a cover. The from address was spoofed to look like Apple. The FedEx tracking for them never got past the label being created which means Jim hand delivered them to the office (no cost that way).</li>
 <li>The Apple repair cases never updated to indicate that the machines were received, so how could we have two replacements from them?</li>
 <li>The &quot;replacement&quot; laptops had different serial numbers. Devices Apple repairs retain their serial numbers.</li>
 <li>&quot;One laptop is being prepped for a new hire starting Monday.&quot; The new hire did not have the missing laptop.</li>
 </ul>
 <h2>Jim Plays the Victim</h2>
-<p>While we were civil and as non-accusatory as possible, and were doing our best to only seek answers about the missing property that Jim was responsible for keeping tracking track of, Jim decides it's best to go full victim.</p>
+<p>While we were civil and as non-accusatory as possible, and were doing our best to only seek answers about the missing property that Jim was responsible for keeping track of, Jim decides it's best to go full victim.</p>
 <p><a href="/images/laptop_thief3.png"><img src="/images/laptop_thief3.png" alt="Time to play the victim" /></a></p>
 <h2>Jim Gets Let Go</h2>
 <p>At this point, we were not sure about the entirety of what was going on, but we knew that we had machines missing, and nothing that Jim was saying was adding up and that we were being lied to. Jim was given 24 hours to reproduce all of the missing machines which he failed to do. At that point we had no choice but to let him go before he had the chance to quit himself.</p>
