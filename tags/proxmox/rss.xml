@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Proxmox</title>
-    <link>http://localhost:8000/tags/proxmox/</link>
+    <link>blog.pipetogrep.org/tags/proxmox/</link>
     <description>Posts tagged with: Proxmox</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 01:24:26 -0400</lastBuildDate>
-    <atom:link href="http://localhost:8000/tags/proxmox/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:30:30 -0400</lastBuildDate>
+    <atom:link href="blog.pipetogrep.org/tags/proxmox/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
-        <link>http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
+        <link>blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
+        <guid isPermaLink="true">blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
         <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
+        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
 <p>I never got to use it and I only have so much room for old computers.</p>

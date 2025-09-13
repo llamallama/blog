@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: NetBSD</title>
-    <link>http://localhost:8000/tags/netbsd/</link>
+    <link>blog.pipetogrep.org/tags/netbsd/</link>
     <description>Posts tagged with: NetBSD</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 01:24:25 -0400</lastBuildDate>
-    <atom:link href="http://localhost:8000/tags/netbsd/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:30:27 -0400</lastBuildDate>
+    <atom:link href="blog.pipetogrep.org/tags/netbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Using AI to Enhance the Retro Computing Experience</title>
-        <link>http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
+        <link>blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
+        <guid isPermaLink="true">blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
         <pubDate>Sun, 13 Jul 2025 23:35:35 -0400</pubDate>
         <atom:updated>2025-07-14T00:31:31-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
+        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
 <p>Accessing ChatGPT from the command line on various flavors of Unix like operating systems is nothing new. I found an interesting use for it today that I had not previously considered. That is to make researching from a retro computer possible where it would normally be not be so.</p>
 <p>For example, as previously discussed in my post <a href="/2025/05/14/netbsd-ibooks-python-oh-my/">NetBSD &amp; iBooks &amp; Python, oh my!</a>, I like to use old hardware for useful things like, in this case, a Pygame development machine. That works great but the problem is that I'm not very good at Python and have to look up lots of stuff. Since I don't have access to a modern browser available on this machine, this is my usual experience especially when Stack Overflow comes into the picture.</p>
 <p><a href="/images/brick_ai2.png"><img src="/images/brick_ai2.png" alt="No Stack Overflow without cookies or JavaScript" /></a></p>
@@ -29,11 +29,11 @@
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
-        <link>http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
+        <link>blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
+        <guid isPermaLink="true">blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
         <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
+        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
 <h2>The Hardware</h2>
