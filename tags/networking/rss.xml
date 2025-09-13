@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Networking</title>
-    <link>blog.pipetogrep.org/tags/networking/</link>
+    <link>https://blog.pipetogrep.org/tags/networking/</link>
     <description>Posts tagged with: Networking</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 01:30:28 -0400</lastBuildDate>
-    <atom:link href="blog.pipetogrep.org/tags/networking/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:33:23 -0400</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/networking/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
-        <link>blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
-        <guid isPermaLink="true">blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
         <atom:updated>2025-05-30T14:32:47-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
 <p>What does one do with a retro LAN? In our case we have and will:</p>

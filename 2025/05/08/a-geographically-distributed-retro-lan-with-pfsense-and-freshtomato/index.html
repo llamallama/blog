@@ -8,15 +8,15 @@
     <meta property="og:title" content="A Geographically Distributed Retro LAN with pfSense and FreshTomato | The Pipetogrep Blog">
     <meta property="og:description" content="Building a safe and secure retro LAN spanning multiple states">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="blog.pipetogrep.org//2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/">
-    <meta property="og:image" content="blog.pipetogrep.org/images/retro_lan.png">
+    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/">
+    <meta property="og:image" content="https://blog.pipetogrep.org/images/retro_lan.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="A Geographically Distributed Retro LAN with pfSense and FreshTomato | The Pipetogrep Blog">
     <meta name="twitter:description" content="Building a safe and secure retro LAN spanning multiple states">
-    <meta name="twitter:image" content="blog.pipetogrep.org/images/retro_lan.png">
+    <meta name="twitter:image" content="https://blog.pipetogrep.org/images/retro_lan.png">
     <meta name="theme-color" content="#808080">
-    <link rel="stylesheet" href="blog.pipetogrep.org/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="blog.pipetogrep.org/rss.xml">
+    <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,17 +34,17 @@
     "name": "The Pipetogrep Blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "blog.pipetogrep.org/logo.png"
+      "url": "https://blog.pipetogrep.org/logo.png"
     }
   },
   "description": "Building a safe and secure retro LAN spanning multiple states",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/"
+    "@id": "https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "blog.pipetogrep.org/images/retro_lan.png"
+    "url": "https://blog.pipetogrep.org/images/retro_lan.png"
   }
 }
 </script>
@@ -53,16 +53,16 @@
 <body>
     <div class="container">
         <header>
-            <div class="site-title"><a href="blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
+            <div class="site-title"><a href="https://blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
             <p>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</p>
             <nav>
-                <a href="blog.pipetogrep.org/">Home</a> <a href="blog.pipetogrep.org/tags/">Tags</a> <a href="blog.pipetogrep.org/archives/">Archives</a> <a href="blog.pipetogrep.org/rss.xml">RSS</a>
+                <a href="https://blog.pipetogrep.org/">Home</a> <a href="https://blog.pipetogrep.org/tags/">Tags</a> <a href="https://blog.pipetogrep.org/archives/">Archives</a> <a href="https://blog.pipetogrep.org/rss.xml">RSS</a>
             </nav>
         </header>
         <main> <article class="post">
   <h1>A Geographically Distributed Retro LAN with pfSense and FreshTomato</h1>
 <div class="page-meta"><p class="meta">Published on: <time datetime="2025-05-08 21:29:05 -0400">2025-05-08 21:29:05</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-05-30 14:32:47 -0400">2025-05-30 14:32:47</time> &bull; 11 min read</p></div>
-<div class="featured-image"><img src="blog.pipetogrep.org/images/retro_lan.png" alt="Retro LAN Diagram"><div class="image-caption">Retro LAN Diagram</div></div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="Retro LAN Diagram"><div class="image-caption">Retro LAN Diagram</div></div>
 <h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
@@ -210,20 +210,20 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
 <p>Have fun!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>
-<div class="tags"> <a href="blog.pipetogrep.org/tags/retro-computing/" class="tag">Retro Computing</a> <a href="blog.pipetogrep.org/tags/networking/" class="tag">Networking</a> <a href="blog.pipetogrep.org/tags/openvpn/" class="tag">OpenVPN</a> <a href="blog.pipetogrep.org/tags/home-lab/" class="tag">Home Lab</a> <a href="blog.pipetogrep.org/tags/guides/" class="tag">Guides</a></div>
+<div class="tags"> <a href="https://blog.pipetogrep.org/tags/retro-computing/" class="tag">Retro Computing</a> <a href="https://blog.pipetogrep.org/tags/networking/" class="tag">Networking</a> <a href="https://blog.pipetogrep.org/tags/openvpn/" class="tag">OpenVPN</a> <a href="https://blog.pipetogrep.org/tags/home-lab/" class="tag">Home Lab</a> <a href="https://blog.pipetogrep.org/tags/guides/" class="tag">Guides</a></div>
 <section class="related-posts">
 <h3>Related Posts</h3>
 <div class="related-posts-list">
 <article class="related-post">
-<h4><a href="blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/">How to Install Windows NT 4 Server on Proxmox</a></h4>
+<h4><a href="https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/">How to Install Windows NT 4 Server on Proxmox</a></h4>
 <p>Should I host my blog on here?</p>
 </article>
 <article class="related-post">
-<h4><a href="blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/">Using AI to Enhance the Retro Computing Experience</a></h4>
+<h4><a href="https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/">Using AI to Enhance the Retro Computing Experience</a></h4>
 <p>ChatGPT + Retro = ❤️</p>
 </article>
 <article class="related-post">
-<h4><a href="blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/">Blogging Like It's 1998</a></h4>
+<h4><a href="https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/">Blogging Like It's 1998</a></h4>
 <p>I don't know what's wrong with me. Please send help.</p>
 </article>
 </div>
@@ -234,7 +234,7 @@ setup for this will be done on a network external to the one that pfSense is on.
             <p>&copy; 2025 Chris Jones. All rights reserved.</p>
             <p>This site was generated with <a href="https://bssg.dragas.net">BSSG</a>, a Bash Static Site Generator.</p>
             <p>
-                <a href="blog.pipetogrep.org/">Home</a> &middot; <a href="blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
+                <a href="https://blog.pipetogrep.org/">Home</a> &middot; <a href="https://blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="https://blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="https://blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
             </p>
             <p><a href="#">Back to Top</a></p>
         </footer>

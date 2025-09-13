@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: OpenBSD</title>
-    <link>blog.pipetogrep.org/tags/openbsd/</link>
+    <link>https://blog.pipetogrep.org/tags/openbsd/</link>
     <description>Posts tagged with: OpenBSD</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 01:30:28 -0400</lastBuildDate>
-    <atom:link href="blog.pipetogrep.org/tags/openbsd/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:33:23 -0400</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/openbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Compiling Helm on OpenBSD</title>
-        <link>blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
-        <guid isPermaLink="true">blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
+        <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
         <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
         <atom:updated>2025-09-13T01:20:02-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
 <pre><code>pkg_add go git gmake bash
 git clone https://github.com/helm/helm
@@ -28,11 +28,11 @@ doas gmake install
     </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
-        <link>blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
-        <guid isPermaLink="true">blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>

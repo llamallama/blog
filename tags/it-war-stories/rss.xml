@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: IT War Stories</title>
-    <link>blog.pipetogrep.org/tags/it-war-stories/</link>
+    <link>https://blog.pipetogrep.org/tags/it-war-stories/</link>
     <description>Posts tagged with: IT War Stories</description>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 01:30:26 -0400</lastBuildDate>
-    <atom:link href="blog.pipetogrep.org/tags/it-war-stories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:33:21 -0400</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/it-war-stories/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
-        <link>blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
-        <guid isPermaLink="true">blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
+        <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
         <pubDate>Sun, 27 Jul 2025 19:21:39 -0400</pubDate>
         <atom:updated>2025-07-29T12:18:37-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
 <p>I used to worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
 <h2>When I Went Back to IT</h2>
 <p>I was burning out on my position as a DevOps Engineer. Instead of looking for yet another job doing the same thing, I asked my boss if I could fill a different role temporarily so I could reset while still being useful to the company. He agreed and asked what I had in mind.</p>
