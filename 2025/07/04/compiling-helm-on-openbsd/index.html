@@ -8,22 +8,22 @@
     <meta property="og:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
     <meta property="og:description" content="How to build and run Helm on OpenBSD">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://blog.pipetogrep.org//2025/07/04/compiling-helm-on-openbsd/">
-    <meta property="og:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
+    <meta property="og:url" content="http://localhost:8000//2025/07/04/compiling-helm-on-openbsd/">
+    <meta property="og:image" content="http://localhost:8000/images/helm_openbsd.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
     <meta name="twitter:description" content="How to build and run Helm on OpenBSD">
-    <meta name="twitter:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
+    <meta name="twitter:image" content="http://localhost:8000/images/helm_openbsd.png">
     <meta name="theme-color" content="#808080">
-    <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://localhost:8000/rss.xml">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Compiling Helm on OpenBSD",
-  "datePublished": "2025-07-04T17:03:14-04:00",
-  "dateModified": "2025-07-14T00:01:43-04:00",
+  "datePublished": "2025-07-04T18:03:14-04:00",
+  "dateModified": "2025-09-13T02:20:02-04:00",
   "author": {
     "@type": "Person",
     "name": "Chris Jones",
@@ -34,17 +34,17 @@
     "name": "The Pipetogrep Blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://blog.pipetogrep.org/logo.png"
+      "url": "http://localhost:8000/logo.png"
     }
   },
   "description": "How to build and run Helm on OpenBSD",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/"
+    "@id": "http://localhost:8000/2025/07/04/compiling-helm-on-openbsd/"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://blog.pipetogrep.org/images/helm_openbsd.png"
+    "url": "http://localhost:8000/images/helm_openbsd.png"
   }
 }
 </script>
@@ -53,19 +53,19 @@
 <body>
     <div class="container">
         <header>
-            <div class="site-title"><a href="https://blog.pipetogrep.org/">The Pipetogrep Blog</a></div>
+            <div class="site-title"><a href="http://localhost:8000/">The Pipetogrep Blog</a></div>
             <p>I'm Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</p>
             <nav>
-                <a href="https://blog.pipetogrep.org/">Home</a> <a href="https://blog.pipetogrep.org/tags/">Tags</a> <a href="https://blog.pipetogrep.org/archives/">Archives</a> <a href="https://blog.pipetogrep.org/rss.xml">RSS</a>
+                <a href="http://localhost:8000/">Home</a> <a href="http://localhost:8000/tags/">Tags</a> <a href="http://localhost:8000/archives/">Archives</a> <a href="http://localhost:8000/rss.xml">RSS</a>
             </nav>
         </header>
         <main> <article class="post">
   <h1>Compiling Helm on OpenBSD</h1>
-<div class="page-meta"><p class="meta">Published on: <time datetime="2025-07-04 17:03:14 -0400">2025-07-04 17:03:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-07-14 00:01:43 -0400">2025-07-14 00:01:43</time> &bull; 1 min read</p></div>
-<div class="featured-image"><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Helm + OpenBSD"><div class="image-caption">Helm + OpenBSD</div></div>
+<div class="page-meta"><p class="meta">Published on: <time datetime="2025-07-04 17:03:14 -0400">2025-07-04 17:03:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-09-13 01:20:02 -0400">2025-09-13 01:20:02</time> &bull; 1 min read</p></div>
+<div class="featured-image"><img src="http://localhost:8000/images/helm_openbsd.png" alt="Helm + OpenBSD"><div class="image-caption">Helm + OpenBSD</div></div>
 <p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
-<pre><code>pkg_add git gmake bash
+<pre><code>pkg_add go git gmake bash
 git clone https://github.com/helm/helm
 cd helm
 gmake
@@ -74,16 +74,16 @@ doas gmake install
 <p>After that, helm should be installed to <code>/usr/local/bin/</code></p>
 <p>That's it!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>
-<div class="tags"> <a href="https://blog.pipetogrep.org/tags/openbsd/" class="tag">OpenBSD</a> <a href="https://blog.pipetogrep.org/tags/kubernetes/" class="tag">Kubernetes</a></div>
+<div class="tags"> <a href="http://localhost:8000/tags/openbsd/" class="tag">OpenBSD</a> <a href="http://localhost:8000/tags/kubernetes/" class="tag">Kubernetes</a></div>
 <section class="related-posts">
 <h3>Related Posts</h3>
 <div class="related-posts-list">
 <article class="related-post">
-<h4><a href="https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/">Blogging Like It's 1998</a></h4>
+<h4><a href="http://localhost:8000/2025/06/25/blogging-like-it-s-1998/">Blogging Like It's 1998</a></h4>
 <p>I don't know what's wrong with me. Please send help.</p>
 </article>
 <article class="related-post">
-<h4><a href="https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/">Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</a></h4>
+<h4><a href="http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/">Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</a></h4>
 <p>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</p>
 </article>
 </div>
@@ -94,7 +94,7 @@ doas gmake install
             <p>&copy; 2025 Chris Jones. All rights reserved.</p>
             <p>This site was generated with <a href="https://bssg.dragas.net">BSSG</a>, a Bash Static Site Generator.</p>
             <p>
-                <a href="https://blog.pipetogrep.org/">Home</a> &middot; <a href="https://blog.pipetogrep.org/archives/">Archives</a> &middot; <a href="https://blog.pipetogrep.org/tags/">Tags</a> &middot; <a href="https://blog.pipetogrep.org/rss.xml">Subscribe via RSS</a>
+                <a href="http://localhost:8000/">Home</a> &middot; <a href="http://localhost:8000/archives/">Archives</a> &middot; <a href="http://localhost:8000/tags/">Tags</a> &middot; <a href="http://localhost:8000/rss.xml">Subscribe via RSS</a>
             </p>
             <p><a href="#">Back to Top</a></p>
         </footer>

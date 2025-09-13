@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Kubernetes</title>
-    <link>https://blog.pipetogrep.org/tags/kubernetes/</link>
+    <link>http://localhost:8000/tags/kubernetes/</link>
     <description>Posts tagged with: Kubernetes</description>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jul 2025 22:45:39 -0400</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/tags/kubernetes/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:24:24 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/kubernetes/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Compiling Helm on OpenBSD</title>
-        <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
+        <link>http://localhost:8000/2025/07/04/compiling-helm-on-openbsd/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/07/04/compiling-helm-on-openbsd/</guid>
         <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
-        <atom:updated>2025-07-14T00:01:43-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
+        <atom:updated>2025-09-13T01:20:02-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
-<pre><code>pkg_add git gmake bash
+<pre><code>pkg_add go git gmake bash
 git clone https://github.com/helm/helm
 cd helm
 gmake
@@ -28,11 +28,11 @@ doas gmake install
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
-        <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
+        <link>http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
         <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
 <ul>
 <li>A functioning Kubernetes setup</li>

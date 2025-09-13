@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Guides</title>
-    <link>https://blog.pipetogrep.org/tags/guides/</link>
+    <link>http://localhost:8000/tags/guides/</link>
     <description>Posts tagged with: Guides</description>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jul 2025 22:45:38 -0400</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/tags/guides/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:24:24 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/guides/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
-        <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
+        <link>http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
         <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
 <p>I never got to use it and I only have so much room for old computers.</p>
@@ -246,11 +246,11 @@
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
-        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
         <atom:updated>2025-05-30T14:32:47-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
 <p>What does one do with a retro LAN? In our case we have and will:</p>

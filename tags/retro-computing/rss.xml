@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Retro Computing</title>
-    <link>https://blog.pipetogrep.org/tags/retro-computing/</link>
+    <link>http://localhost:8000/tags/retro-computing/</link>
     <description>Posts tagged with: Retro Computing</description>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jul 2025 22:45:39 -0400</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:24:27 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Using AI to Enhance the Retro Computing Experience</title>
-        <link>https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
+        <link>http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
         <pubDate>Sun, 13 Jul 2025 23:35:35 -0400</pubDate>
         <atom:updated>2025-07-14T00:31:31-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
 <p>Accessing ChatGPT from the command line on various flavors of Unix like operating systems is nothing new. I found an interesting use for it today that I had not previously considered. That is to make researching from a retro computer possible where it would normally be not be so.</p>
 <p>For example, as previously discussed in my post <a href="/2025/05/14/netbsd-ibooks-python-oh-my/">NetBSD &amp; iBooks &amp; Python, oh my!</a>, I like to use old hardware for useful things like, in this case, a Pygame development machine. That works great but the problem is that I'm not very good at Python and have to look up lots of stuff. Since I don't have access to a modern browser available on this machine, this is my usual experience especially when Stack Overflow comes into the picture.</p>
 <p><a href="/images/brick_ai2.png"><img src="/images/brick_ai2.png" alt="No Stack Overflow without cookies or JavaScript" /></a></p>
@@ -29,11 +29,11 @@
     </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
-        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <link>http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>
@@ -92,11 +92,11 @@
     </item>
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
-        <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
+        <link>http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
         <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
 <p>I never got to use it and I only have so much room for old computers.</p>
@@ -329,11 +329,11 @@
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
-        <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
+        <link>http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
         <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
 <h2>The Hardware</h2>
@@ -379,11 +379,11 @@
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
-        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
         <atom:updated>2025-05-30T14:32:47-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
 <p>What does one do with a retro LAN? In our case we have and will:</p>
@@ -534,11 +534,11 @@ setup for this will be done on a network external to the one that pfSense is on.
     </item>
     <item>
         <title>IDE Drive Adapters and Picky Retro Computers</title>
-        <link>https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
+        <link>http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
         <pubDate>Tue, 06 May 2025 00:50:10 -0400</pubDate>
         <atom:updated>2025-05-30T14:29:11-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
 <p>I'm no stranger to using IDE adapters that convert relatively modern media like SD cards or SATA SSDs to work as a laptop IDE drive. I tried one of the latter, but no luck. The Dell saw no hard drive in its BIOS settings. What's worse is the BIOS is extremely limited, only allowing for auto drive detection.</p>
 <p>After some research, I decided to go with the Compact Flash (CF) Card to IDE adapter route. It turns out that CF Cards can behave exactly like an IDE drive. In fact, CF to IDE adapters have no chips on them, only traces to convert the CF Card pinout to IDE.</p>
 <p>That still didn't work. After trying multiple CF cards (8GB and under) and multiple CF to IDE adapters, I was ready to purchase some old spinning rust of dubious quality off of eBay or either give up. Then I learned is that CF Cards have two modes, removable and fixed.</p>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: BSSG</title>
-    <link>https://blog.pipetogrep.org/tags/bssg/</link>
+    <link>http://localhost:8000/tags/bssg/</link>
     <description>Posts tagged with: BSSG</description>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jul 2025 22:45:38 -0400</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:24:23 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Blogging Like It&apos;s 1998</title>
-        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <link>http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>
@@ -72,11 +72,11 @@
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
-        <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
+        <link>http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
         <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
 <ul>
 <li>A functioning Kubernetes setup</li>
@@ -164,8 +164,8 @@ kubectl rollout restart deployment/blog
     </item>
     <item>
         <title>Hello World!</title>
-        <link>https://blog.pipetogrep.org/2025/05/03/hello-world/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/03/hello-world/</guid>
+        <link>http://localhost:8000/2025/05/03/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/03/hello-world/</guid>
         <pubDate>Sat, 03 May 2025 21:20:12 -0400</pubDate>
         <atom:updated>2025-05-05T00:48:39-04:00</atom:updated>
         <description><![CDATA[<p>Hello and welcome to blog.pipetogrep.org. I started this to write about my misadventures in retrocomputing but I'm sure I'll have plenty of other stuff in here too. This post is here to prove to myself that I can manage a blog via <a href="https://bssg.dragas.net/">BSSG</a>. I love the idea of simplistic tools to do complicated tasks and abuses of Bash shell scripting and BSSG scratches both of those itches for me. Thank you for visiting and hopefully you'll find something of value or entertainment here.</p>]]></description>

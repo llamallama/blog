@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - RSS Feed</title>
-    <link>https://blog.pipetogrep.org/</link>
+    <link>http://localhost:8000/</link>
     <description>I&apos;m Chris. I blog here. I do it for me but if you enjoy it too then that makes me happy!</description>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Jul 2025 12:27:30 -0400</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 01:24:30 -0400</lastBuildDate>
+    <atom:link href="http://localhost:8000/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
-        <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
+        <link>http://localhost:8000/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
         <pubDate>Sun, 27 Jul 2025 19:21:39 -0400</pubDate>
         <atom:updated>2025-07-29T12:18:37-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
 <p>I used to worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
 <h2>When I Went Back to IT</h2>
 <p>I was burning out on my position as a DevOps Engineer. Instead of looking for yet another job doing the same thing, I asked my boss if I could fill a different role temporarily so I could reset while still being useful to the company. He agreed and asked what I had in mind.</p>
@@ -92,11 +92,11 @@
     </item>
     <item>
         <title>Using AI to Enhance the Retro Computing Experience</title>
-        <link>https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
+        <link>http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</guid>
         <pubDate>Sun, 13 Jul 2025 23:35:35 -0400</pubDate>
         <atom:updated>2025-07-14T00:31:31-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/brick_ai1.jpg" alt="Using AI to Enhance the Retro Computing Experience" title="ChatGPT on the iBook"><figcaption>ChatGPT on the iBook</figcaption></figure><h2>The Problem</h2>
 <p>Accessing ChatGPT from the command line on various flavors of Unix like operating systems is nothing new. I found an interesting use for it today that I had not previously considered. That is to make researching from a retro computer possible where it would normally be not be so.</p>
 <p>For example, as previously discussed in my post <a href="/2025/05/14/netbsd-ibooks-python-oh-my/">NetBSD &amp; iBooks &amp; Python, oh my!</a>, I like to use old hardware for useful things like, in this case, a Pygame development machine. That works great but the problem is that I'm not very good at Python and have to look up lots of stuff. Since I don't have access to a modern browser available on this machine, this is my usual experience especially when Stack Overflow comes into the picture.</p>
 <p><a href="/images/brick_ai2.png"><img src="/images/brick_ai2.png" alt="No Stack Overflow without cookies or JavaScript" /></a></p>
@@ -112,13 +112,13 @@
     </item>
     <item>
         <title>Compiling Helm on OpenBSD</title>
-        <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
+        <link>http://localhost:8000/2025/07/04/compiling-helm-on-openbsd/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/07/04/compiling-helm-on-openbsd/</guid>
         <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
-        <atom:updated>2025-07-14T00:01:43-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
+        <atom:updated>2025-09-13T01:20:02-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
-<pre><code>pkg_add git gmake bash
+<pre><code>pkg_add go git gmake bash
 git clone https://github.com/helm/helm
 cd helm
 gmake
@@ -131,11 +131,11 @@ doas gmake install
     </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
-        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <link>http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</guid>
         <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>
@@ -194,11 +194,11 @@ doas gmake install
     </item>
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
-        <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
+        <link>http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
         <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
         <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
 <p>I never got to use it and I only have so much room for old computers.</p>
@@ -431,11 +431,11 @@ doas gmake install
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
-        <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
+        <link>http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
         <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
         <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
 <h2>The Hardware</h2>
@@ -481,11 +481,11 @@ doas gmake install
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
-        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
         <pubDate>Thu, 08 May 2025 21:29:05 -0400</pubDate>
         <atom:updated>2025-05-30T14:32:47-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
 <p>What does one do with a retro LAN? In our case we have and will:</p>
@@ -636,11 +636,11 @@ setup for this will be done on a network external to the one that pfSense is on.
     </item>
     <item>
         <title>IDE Drive Adapters and Picky Retro Computers</title>
-        <link>https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
+        <link>http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
         <pubDate>Tue, 06 May 2025 00:50:10 -0400</pubDate>
         <atom:updated>2025-05-30T14:29:11-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
 <p>I'm no stranger to using IDE adapters that convert relatively modern media like SD cards or SATA SSDs to work as a laptop IDE drive. I tried one of the latter, but no luck. The Dell saw no hard drive in its BIOS settings. What's worse is the BIOS is extremely limited, only allowing for auto drive detection.</p>
 <p>After some research, I decided to go with the Compact Flash (CF) Card to IDE adapter route. It turns out that CF Cards can behave exactly like an IDE drive. In fact, CF to IDE adapters have no chips on them, only traces to convert the CF Card pinout to IDE.</p>
 <p>That still didn't work. After trying multiple CF cards (8GB and under) and multiple CF to IDE adapters, I was ready to purchase some old spinning rust of dubious quality off of eBay or either give up. Then I learned is that CF Cards have two modes, removable and fixed.</p>
@@ -656,11 +656,11 @@ setup for this will be done on a network external to the one that pfSense is on.
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
-        <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
+        <link>http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
         <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
         <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
-        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
+        <description><![CDATA[<figure><img src="http://localhost:8000/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
 <ul>
 <li>A functioning Kubernetes setup</li>
@@ -748,8 +748,8 @@ kubectl rollout restart deployment/blog
     </item>
     <item>
         <title>Hello World!</title>
-        <link>https://blog.pipetogrep.org/2025/05/03/hello-world/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/03/hello-world/</guid>
+        <link>http://localhost:8000/2025/05/03/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/05/03/hello-world/</guid>
         <pubDate>Sat, 03 May 2025 21:20:12 -0400</pubDate>
         <atom:updated>2025-05-05T00:48:39-04:00</atom:updated>
         <description><![CDATA[<p>Hello and welcome to blog.pipetogrep.org. I started this to write about my misadventures in retrocomputing but I'm sure I'll have plenty of other stuff in here too. This post is here to prove to myself that I can manage a blog via <a href="https://bssg.dragas.net/">BSSG</a>. I love the idea of simplistic tools to do complicated tasks and abuses of Bash shell scripting and BSSG scratches both of those itches for me. Thank you for visiting and hopefully you'll find something of value or entertainment here.</p>]]></description>
