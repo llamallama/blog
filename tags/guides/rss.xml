@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/guides/</link>
     <description>Posts tagged with: Guides</description>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Oct 2025 22:02:57 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 Oct 2025 22:02:52 -0400</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/guides/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Tech Guide by an IT Person for Therapists</title>
         <link>https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</guid>
         <pubDate>Sun, 14 Sep 2025 18:32:29 -0400</pubDate>
-        <atom:updated>2025-10-04T20:44:59-04:00</atom:updated>
+        <atom:updated>2025-10-05T22:02:33-04:00</atom:updated>
         <description><![CDATA[<h1>TL;DR (Too Long Didn't Read)</h1>
 <p>These are my recommendations for the ideal therapist tech setup.</p>
 <ul>
@@ -75,11 +75,12 @@
 <p><a href="/images/portrait_mode_cutoff.jpg"><img src="/images/portrait_mode_cutoff.jpg" alt="" /></a></p>
 <p>Please, once again, avoid subjecting patients to vertical video. Give them the best possible, most compatible, video experience by keeping it horizontal.</p>
 <ol start="2">
-<li>Poor camera placement: &quot;OK, so I'll just rotate the phone. Problem solved!&quot; Well, not quite. Look at where the camera is now. It's on the side. Now it looks like you're looking at something beside your patient. That makes you look less engaged or distracted.</li>
-</ol>
-<p>TODO: Show example</p>
-<ol start="3">
-<li>Smaller screen. If your patient takes the time to show more than a vertical video of themselves, you want to be able to see their body language. This is more difficult to do when your screen is a quarter of the size of a normal laptop screen.</li>
+<li>
+<p>Poor camera placement: &quot;OK, so I'll just rotate the phone. Problem solved!&quot; Well, not quite. Look at where the camera is now. It's on the side. Now it looks like you're looking at something beside your patient. That makes you look less engaged or distracted.</p>
+</li>
+<li>
+<p>Smaller screen. If your patient takes the time to show more than a vertical video of themselves, you want to be able to see their body language. This is more difficult to do when your screen is a quarter of the size of a normal laptop screen.</p>
+</li>
 </ol>
 <p>&quot;OK, what about a tablet?&quot;</p>
 <p>That solves problem #3, but not #1 and #2. Some tablets do allow the use of an external webcam, but iPads, which are what most tablet owners seem to use these days, do not.</p>
