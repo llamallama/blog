@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/mental-health/</link>
     <description>Posts tagged with: Mental Health</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:32 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/mental-health/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Tech Guide by an IT Person for Therapists</title>
         <link>https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</guid>
-        <pubDate>Sun, 14 Sep 2025 18:32:29 -0400</pubDate>
+        <pubDate>Sun, 14 Sep 2025 22:32:29 GMT</pubDate>
         <atom:updated>2025-10-05T22:02:33-04:00</atom:updated>
         <description><![CDATA[<h1>TL;DR (Too Long Didn't Read)</h1>
 <p>These are my recommendations for the ideal therapist tech setup.</p>
@@ -231,6 +231,7 @@
 <h1>In Conclusion</h1>
 <p>If you've read this far, thank you for your consideration. If you have any questions or comments about any of this, please email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>. Finally, thank you, therapists, for all you do with and for your patients. You're doing good and critical work and you should be proud.</p>
 <p>Thank you and be well.</p>]]></description>
+        
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

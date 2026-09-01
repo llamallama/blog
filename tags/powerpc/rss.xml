@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/powerpc/</link>
     <description>Posts tagged with: PowerPC</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:14 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:33 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/powerpc/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
         <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
-        <pubDate>Wed, 14 May 2025 16:52:30 -0400</pubDate>
+        <pubDate>Wed, 14 May 2025 20:52:30 GMT</pubDate>
         <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
@@ -55,6 +55,7 @@
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/ibook2.jpg" length="390788" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

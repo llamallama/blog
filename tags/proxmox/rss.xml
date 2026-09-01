@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/proxmox/</link>
     <description>Posts tagged with: Proxmox</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:14 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:33 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/proxmox/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
         <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
-        <pubDate>Fri, 23 May 2025 18:41:50 -0400</pubDate>
+        <pubDate>Fri, 23 May 2025 22:41:50 GMT</pubDate>
         <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
@@ -242,6 +242,7 @@
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/win_nt.png" length="42919" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

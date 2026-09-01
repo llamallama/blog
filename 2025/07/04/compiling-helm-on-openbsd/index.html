@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compiling Helm on OpenBSD | The Pipetogrep Blog</title>
     <meta name="description" content="How to build and run Helm on OpenBSD">
-    <meta property="og:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
+    <meta property="og:title" content="Compiling Helm on OpenBSD">
     <meta property="og:description" content="How to build and run Helm on OpenBSD">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://blog.pipetogrep.org//2025/07/04/compiling-helm-on-openbsd/">
+    <meta property="og:url" content="https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/">
     <meta property="og:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Compiling Helm on OpenBSD | The Pipetogrep Blog">
+    <link rel="canonical" href="https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compiling Helm on OpenBSD">
     <meta name="twitter:description" content="How to build and run Helm on OpenBSD">
     <meta name="twitter:image" content="https://blog.pipetogrep.org/images/helm_openbsd.png">
+    
     <meta name="theme-color" content="#808080">
     <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    
+    <link rel="preload" as="image" href="https://blog.pipetogrep.org/images/helm_openbsd.png">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "Compiling Helm on OpenBSD",
   "datePublished": "2025-07-04T17:03:14-04:00",
   "dateModified": "2025-09-13T01:20:02-04:00",
   "author": {
     "@type": "Person",
-    "name": "Chris Jones",
-    "email": "blog@pipetogrep.org"
+    "name": "Chris Jones"
   },
   "publisher": {
     "@type": "Organization",
@@ -61,8 +64,8 @@
         </header>
         <main> <article class="post">
   <h1>Compiling Helm on OpenBSD</h1>
-<div class="page-meta"><p class="meta">Published on: <time datetime="2025-07-04 17:03:14 -0400">2025-07-04 17:03:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-09-13 01:20:02 -0400">2025-09-13 01:20:02</time> &bull; 1 min read</p></div>
-<div class="featured-image"><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Helm + OpenBSD"><div class="image-caption">Helm + OpenBSD</div></div>
+<div class="page-meta"><p class="meta">Published on: <time datetime="2025-07-04T17:03:14-04:00">2025-07-04 17:03:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-09-13T01:20:02-04:00">2025-09-13 01:20:02</time> &bull; 1 min read</p></div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Helm + OpenBSD" fetchpriority="high"><div class="image-caption">Helm + OpenBSD</div></div>
 <p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
 <pre><code>pkg_add go git gmake bash

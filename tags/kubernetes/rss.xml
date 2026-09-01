@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/kubernetes/</link>
     <description>Posts tagged with: Kubernetes</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:32 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/kubernetes/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Compiling Helm on OpenBSD</title>
         <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
-        <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
+        <pubDate>Fri, 04 Jul 2025 21:03:14 GMT</pubDate>
         <atom:updated>2025-09-13T01:20:02-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
@@ -24,13 +24,14 @@ doas gmake install
 <p>After that, helm should be installed to <code>/usr/local/bin/</code></p>
 <p>That's it!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/helm_openbsd.png" length="339036" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
         <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
-        <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
+        <pubDate>Mon, 05 May 2025 04:00:39 GMT</pubDate>
         <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
@@ -116,6 +117,7 @@ kubectl rollout restart deployment/blog
 <p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
 <p>Why did I do it like this? Because I can and I wanted to!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/busybox_k8s.png" length="45243" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetBSD & iBooks & Python, oh my! | The Pipetogrep Blog</title>
     <meta name="description" content="Using NetBSD for Python game development (pygame) on a PowerPC iBook G4 from 2004.">
-    <meta property="og:title" content="NetBSD & iBooks & Python, oh my! | The Pipetogrep Blog">
+    <meta property="og:title" content="NetBSD & iBooks & Python, oh my!">
     <meta property="og:description" content="Using NetBSD for Python game development (pygame) on a PowerPC iBook G4 from 2004.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://blog.pipetogrep.org//2025/05/14/netbsd-ibooks-python-oh-my/">
+    <meta property="og:url" content="https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/">
     <meta property="og:image" content="https://blog.pipetogrep.org/images/ibook2.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="NetBSD & iBooks & Python, oh my! | The Pipetogrep Blog">
+    <link rel="canonical" href="https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NetBSD & iBooks & Python, oh my!">
     <meta name="twitter:description" content="Using NetBSD for Python game development (pygame) on a PowerPC iBook G4 from 2004.">
     <meta name="twitter:image" content="https://blog.pipetogrep.org/images/ibook2.jpg">
+    
     <meta name="theme-color" content="#808080">
     <link rel="stylesheet" href="https://blog.pipetogrep.org/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.pipetogrep.org/rss.xml">
+    
+    <link rel="preload" as="image" href="https://blog.pipetogrep.org/images/ibook2.jpg">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "NetBSD & iBooks & Python, oh my!",
   "datePublished": "2025-05-14T16:52:30-04:00",
   "dateModified": "2025-05-30T14:27:14-04:00",
   "author": {
     "@type": "Person",
-    "name": "Chris Jones",
-    "email": "blog@pipetogrep.org"
+    "name": "Chris Jones"
   },
   "publisher": {
     "@type": "Organization",
@@ -61,8 +64,8 @@
         </header>
         <main> <article class="post">
   <h1>NetBSD & iBooks & Python, oh my!</h1>
-<div class="page-meta"><p class="meta">Published on: <time datetime="2025-05-14 16:52:30 -0400">2025-05-14 16:52:30</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-05-30 14:27:14 -0400">2025-05-30 14:27:14</time> &bull; 3 min read</p></div>
-<div class="featured-image"><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="Would you believe it feels faster than Windows 11?"><div class="image-caption">Would you believe it feels faster than Windows 11?</div></div>
+<div class="page-meta"><p class="meta">Published on: <time datetime="2025-05-14T16:52:30-04:00">2025-05-14 16:52:30</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2025-05-30T14:27:14-04:00">2025-05-30 14:27:14</time> &bull; 3 min read</p></div>
+<div class="featured-image"><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="Would you believe it feels faster than Windows 11?" fetchpriority="high"><div class="image-caption">Would you believe it feels faster than Windows 11?</div></div>
 <h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>

@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/bssg/</link>
     <description>Posts tagged with: BSSG</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:32 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/bssg/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Blogging Like It&apos;s 1998</title>
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
-        <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
+        <pubDate>Wed, 25 Jun 2025 05:15:26 GMT</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
@@ -68,13 +68,14 @@
 <p><a href="/images/chonk_back.jpg"><img src="/images/chonk_back.jpg" alt="Chonk Back" /></a></p>
 <p><a href="/images/chonk_stickers.jpg"><img src="/images/chonk_stickers.jpg" alt="Chonk Stickers" /></a></p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/chonk_blogging.jpg" length="242468" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites</title>
         <link>https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/05/using-bssg-busybox-and-kubernetes-to-host-and-update-static-websites/</guid>
-        <pubDate>Mon, 05 May 2025 00:00:39 -0400</pubDate>
+        <pubDate>Mon, 05 May 2025 04:00:39 GMT</pubDate>
         <atom:updated>2025-05-30T14:28:15-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/busybox_k8s.png" alt="Using BSSG, BusyBox, and Kubernetes to Host and Update Static Websites" title="BusyBox + k8s = Love"><figcaption>BusyBox + k8s = Love</figcaption></figure><h1>Using BusyBox to Host and Update Static Websites on Kubernetes</h1>
 <p>Prerequisites:</p>
@@ -160,15 +161,17 @@ kubectl rollout restart deployment/blog
 <p>As you can see, it really takes very little to host a static website. In this case, Bash is our &quot;CMS&quot; and BusyBox is our web server. No JavaScript. No Apache or Nginx. Just simple (except k8s) tools to do a simple job quickly.</p>
 <p>Why did I do it like this? Because I can and I wanted to!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/busybox_k8s.png" length="45243" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>Hello World!</title>
         <link>https://blog.pipetogrep.org/2025/05/03/hello-world/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/03/hello-world/</guid>
-        <pubDate>Sat, 03 May 2025 21:20:12 -0400</pubDate>
+        <pubDate>Sun, 04 May 2025 01:20:12 GMT</pubDate>
         <atom:updated>2025-05-05T00:48:39-04:00</atom:updated>
         <description><![CDATA[<p>Hello and welcome to blog.pipetogrep.org. I started this to write about my misadventures in retrocomputing but I'm sure I'll have plenty of other stuff in here too. This post is here to prove to myself that I can manage a blog via <a href="https://bssg.dragas.net/">BSSG</a>. I love the idea of simplistic tools to do complicated tasks and abuses of Bash shell scripting and BSSG scratches both of those itches for me. Thank you for visiting and hopefully you'll find something of value or entertainment here.</p>]]></description>
+        
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

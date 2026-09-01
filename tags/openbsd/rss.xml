@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/openbsd/</link>
     <description>Posts tagged with: OpenBSD</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:33 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/openbsd/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Compiling Helm on OpenBSD</title>
         <link>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</guid>
-        <pubDate>Fri, 04 Jul 2025 17:03:14 -0400</pubDate>
+        <pubDate>Fri, 04 Jul 2025 21:03:14 GMT</pubDate>
         <atom:updated>2025-09-13T01:20:02-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/helm_openbsd.png" alt="Compiling Helm on OpenBSD" title="Helm + OpenBSD"><figcaption>Helm + OpenBSD</figcaption></figure><p>Despite my best efforts, I could not find a single practical tutorial on how to install Helm for OpenBSD. It's not in OpenBSD's package manager nor is it in the ports tree. That leaves building it from source. Here's how.</p>
 <h2>Build Steps</h2>
@@ -24,13 +24,14 @@ doas gmake install
 <p>After that, helm should be installed to <code>/usr/local/bin/</code></p>
 <p>That's it!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/helm_openbsd.png" length="339036" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
         <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
-        <pubDate>Wed, 25 Jun 2025 01:15:26 -0400</pubDate>
+        <pubDate>Wed, 25 Jun 2025 05:15:26 GMT</pubDate>
         <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
@@ -87,6 +88,7 @@ doas gmake install
 <p><a href="/images/chonk_back.jpg"><img src="/images/chonk_back.jpg" alt="Chonk Back" /></a></p>
 <p><a href="/images/chonk_stickers.jpg"><img src="/images/chonk_stickers.jpg" alt="Chonk Stickers" /></a></p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/chonk_blogging.jpg" length="242468" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>

@@ -5,13 +5,13 @@
     <link>https://blog.pipetogrep.org/tags/apple/</link>
     <description>Posts tagged with: Apple</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:45:13 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:51:32 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/apple/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
         <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
-        <pubDate>Sun, 27 Jul 2025 19:21:39 -0400</pubDate>
+        <pubDate>Sun, 27 Jul 2025 23:21:39 GMT</pubDate>
         <atom:updated>2025-07-29T12:18:37-04:00</atom:updated>
         <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/laptop_thief_title.png" alt="That Time I Worked With a Laptop Thief" title="Milk Carton, Missing MacBook"><figcaption>Milk Carton, Missing MacBook</figcaption></figure><h2>Preamble</h2>
 <p>I used to worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
@@ -88,6 +88,7 @@
 <h2>What Did Jim Learn?</h2>
 <p>Something I hope. If he simply maintained that he didn't know anything, he might have gotten further with his ruse. Instead, he kept talking and kept digging himself deeper. At the most, I can hope that he learned not to pull this crap anymore in the future. At the very least, he learned not to lie to me.</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
+                <enclosure url="https://blog.pipetogrep.org/images/laptop_thief_title.png" length="1607383" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
