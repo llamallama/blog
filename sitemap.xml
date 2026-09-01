@@ -19,12 +19,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.pipetogrep.org/2025/07/13/using-ai-to-enhance-the-retro-computing-experience/</loc>
-        <lastmod>2025-07-14</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://blog.pipetogrep.org/2025/07/04/compiling-helm-on-openbsd/</loc>
         <lastmod>2025-09-13</lastmod>
         <changefreq>weekly</changefreq>
@@ -97,30 +91,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://blog.pipetogrep.org/tags/ai/</loc>
-        <lastmod>2025-10-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/netbsd/</loc>
-        <lastmod>2025-10-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/powerpc/</loc>
-        <lastmod>2025-10-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://blog.pipetogrep.org/tags/retro-computing/</loc>
-        <lastmod>2025-10-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://blog.pipetogrep.org/tags/openbsd/</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
@@ -139,6 +109,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://blog.pipetogrep.org/tags/retro-computing/</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://blog.pipetogrep.org/tags/proxmox/</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
@@ -146,6 +122,12 @@
     </url>
     <url>
         <loc>https://blog.pipetogrep.org/tags/virtualization/</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.pipetogrep.org/tags/netbsd/</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
@@ -164,6 +146,12 @@
     </url>
     <url>
         <loc>https://blog.pipetogrep.org/tags/unix/</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://blog.pipetogrep.org/tags/powerpc/</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
