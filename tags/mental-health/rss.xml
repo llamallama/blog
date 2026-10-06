@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Mental Health</title>
-    <link>https://blog.pipetogrep.org/tags/mental-health/</link>
+    <link>http://localhost:8000/tags/mental-health/</link>
     <description>Posts tagged with: Mental Health</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 21:51:32 GMT</lastBuildDate>
-    <atom:link href="https://blog.pipetogrep.org/tags/mental-health/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2026 00:27:37 GMT</lastBuildDate>
+    <atom:link href="http://localhost:8000/tags/mental-health/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>A Tech Guide by an IT Person for Therapists</title>
-        <link>https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</link>
-        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</guid>
-        <pubDate>Sun, 14 Sep 2025 22:32:29 GMT</pubDate>
-        <atom:updated>2025-10-05T22:02:33-04:00</atom:updated>
+        <link>http://localhost:8000/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</link>
+        <guid isPermaLink="true">http://localhost:8000/2025/09/14/a-tech-guide-by-an-it-person-for-therapists/</guid>
+        <pubDate>Sun, 14 Sep 2025 23:32:29 GMT</pubDate>
+        <atom:updated>2025-10-05T22:02:33-05:00</atom:updated>
         <description><![CDATA[<h1>TL;DR (Too Long Didn't Read)</h1>
 <p>These are my recommendations for the ideal therapist tech setup.</p>
 <ul>
