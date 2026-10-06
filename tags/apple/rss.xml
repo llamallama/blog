@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Apple</title>
-    <link>http://localhost:8000/tags/apple/</link>
+    <link>https://blog.pipetogrep.org/tags/apple/</link>
     <description>Posts tagged with: Apple</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 01:18:26 GMT</lastBuildDate>
-    <atom:link href="http://localhost:8000/tags/apple/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2026 14:26:36 GMT</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/apple/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Resurrecting iChat Audio and Video Conferencing</title>
-        <link>http://localhost:8000/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</link>
-        <guid isPermaLink="true">http://localhost:8000/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</guid>
+        <link>https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</guid>
         <pubDate>Fri, 11 Sep 2026 17:36:14 GMT</pubDate>
-        <atom:updated>2026-10-05T20:15:16-05:00</atom:updated>
+        <atom:updated>2026-10-06T10:26:09-04:00</atom:updated>
         <description><![CDATA[<h1>tl;dr</h1>
 <p>Add this to your <code>/etc/hosts</code> file on your old Mac running Leopard or Show Leopard (has not been tested on Tiger or Panther), and iChat should be able to make audio and video calls again. This assumes your router does port-preserving NAT (most do).</p>
 <pre><code>157.230.2.213 configuration.apple.com
@@ -110,16 +110,16 @@
 <h1>The End Result</h1>
 <p>Here is a screenshot of Methodius and I chatting over the real Internet with iChat AV.
 <a href="/images/ichatav_screen_real.png"><img src="/images/ichatav_screen_real.png" alt="iChat AV Screenshot Real" /></a></p>
-<p>Enjoy and happy chatting!</p>]]></description>
+<p>If you have any questions or comments about any of this, please email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>. Enjoy and happy chatting!</p>]]></description>
         
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>That Time I Worked With a Laptop Thief</title>
-        <link>http://localhost:8000/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
-        <pubDate>Mon, 28 Jul 2025 00:21:39 GMT</pubDate>
-        <atom:updated>2026-10-05T20:10:44-05:00</atom:updated>
+        <link>https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/</guid>
+        <pubDate>Sun, 27 Jul 2025 23:21:39 GMT</pubDate>
+        <atom:updated>2026-10-05T21:10:44-04:00</atom:updated>
         <description><![CDATA[<h2>Preamble</h2>
 <p>I used to worked at a place where they had an IT contractor that was stealing laptops and reselling them for over a year. This post is the story of how he got caught. Real names of people and companies will not be used, but the tale and screenshots (with redactions) are all true.</p>
 <h2>When I Went Back to IT</h2>

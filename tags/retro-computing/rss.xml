@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
     <title>The Pipetogrep Blog - Posts tagged with: Retro Computing</title>
-    <link>http://localhost:8000/tags/retro-computing/</link>
+    <link>https://blog.pipetogrep.org/tags/retro-computing/</link>
     <description>Posts tagged with: Retro Computing</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 01:18:29 GMT</lastBuildDate>
-    <atom:link href="http://localhost:8000/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2026 14:26:36 GMT</lastBuildDate>
+    <atom:link href="https://blog.pipetogrep.org/tags/retro-computing/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Resurrecting iChat Audio and Video Conferencing</title>
-        <link>http://localhost:8000/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</link>
-        <guid isPermaLink="true">http://localhost:8000/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</guid>
+        <link>https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</guid>
         <pubDate>Fri, 11 Sep 2026 17:36:14 GMT</pubDate>
-        <atom:updated>2026-10-05T20:15:16-05:00</atom:updated>
+        <atom:updated>2026-10-06T10:26:09-04:00</atom:updated>
         <description><![CDATA[<h1>tl;dr</h1>
 <p>Add this to your <code>/etc/hosts</code> file on your old Mac running Leopard or Show Leopard (has not been tested on Tiger or Panther), and iChat should be able to make audio and video calls again. This assumes your router does port-preserving NAT (most do).</p>
 <pre><code>157.230.2.213 configuration.apple.com
@@ -110,17 +110,17 @@
 <h1>The End Result</h1>
 <p>Here is a screenshot of Methodius and I chatting over the real Internet with iChat AV.
 <a href="/images/ichatav_screen_real.png"><img src="/images/ichatav_screen_real.png" alt="iChat AV Screenshot Real" /></a></p>
-<p>Enjoy and happy chatting!</p>]]></description>
+<p>If you have any questions or comments about any of this, please email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>. Enjoy and happy chatting!</p>]]></description>
         
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>Blogging Like It&apos;s 1998</title>
-        <link>http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/06/25/blogging-like-it-s-1998/</guid>
-        <pubDate>Wed, 25 Jun 2025 06:15:26 GMT</pubDate>
-        <atom:updated>2025-07-04T18:21:29-05:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
+        <link>https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/06/25/blogging-like-it-s-1998/</guid>
+        <pubDate>Wed, 25 Jun 2025 05:15:26 GMT</pubDate>
+        <atom:updated>2025-07-04T18:21:29-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/chonk_blogging.jpg" alt="Blogging Like It&apos;s 1998" title="Meet Chonk"><figcaption>Meet Chonk</figcaption></figure><h2>Meet Chonk (Controller For Scale)</h2>
 <p><a href="/images/chonk_scale.jpg"><img src="/images/chonk_scale.jpg" alt="Chonk Blogging" /></a></p>
 <p>As you can see, Chonk is a big girl. She is a Dell Inspiron 7000 from 1998 and weighs in at 8 pounds. Chonk comes with:</p>
 <ul>
@@ -175,16 +175,16 @@
 <p><a href="/images/chonk_back.jpg"><img src="/images/chonk_back.jpg" alt="Chonk Back" /></a></p>
 <p><a href="/images/chonk_stickers.jpg"><img src="/images/chonk_stickers.jpg" alt="Chonk Stickers" /></a></p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-                <enclosure url="http://localhost:8000/images/chonk_blogging.jpg" length="242468" type="image/jpeg" />
+                <enclosure url="https://blog.pipetogrep.org/images/chonk_blogging.jpg" length="242468" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>How to Install Windows NT 4 Server on Proxmox</title>
-        <link>http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
-        <pubDate>Fri, 23 May 2025 23:41:50 GMT</pubDate>
-        <atom:updated>2025-07-13T23:49:24-05:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
+        <link>https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/</guid>
+        <pubDate>Fri, 23 May 2025 22:41:50 GMT</pubDate>
+        <atom:updated>2025-07-13T23:49:24-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/win_nt.png" alt="How to Install Windows NT 4 Server on Proxmox" title="Windows NT 4 Server Boot Screen"><figcaption>Windows NT 4 Server Boot Screen</figcaption></figure><h2>What?</h2>
 <p>Windows NT 4 doesn't virtualise well. This guide shows how to do it with Proxmox with a minimal amount of pain.</p>
 <h2>Why?</h2>
 <p>I never got to use it and I only have so much room for old computers.</p>
@@ -413,16 +413,16 @@
 <p>Add a bigger disk. Share some files to your old Windows machines. Learn how old domain controllers worked. Set up Exchange and get some mail going.</p>
 <p>But most important, remember to have fun! Thank you for reading.</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-                <enclosure url="http://localhost:8000/images/win_nt.png" length="42919" type="image/png" />
+                <enclosure url="https://blog.pipetogrep.org/images/win_nt.png" length="42919" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>NetBSD &amp; iBooks &amp; Python, oh my!</title>
-        <link>http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
-        <pubDate>Wed, 14 May 2025 21:52:30 GMT</pubDate>
-        <atom:updated>2025-05-30T14:27:14-05:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
+        <link>https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/14/netbsd-ibooks-python-oh-my/</guid>
+        <pubDate>Wed, 14 May 2025 20:52:30 GMT</pubDate>
+        <atom:updated>2025-05-30T14:27:14-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/ibook2.jpg" alt="NetBSD &amp; iBooks &amp; Python, oh my!" title="Would you believe it feels faster than Windows 11?"><figcaption>Would you believe it feels faster than Windows 11?</figcaption></figure><h2>Preamble</h2>
 <p><a href="https://www.netbsd.org/">NetBSD</a> is my favorite of the &quot;proper&quot; Unix operating systems. There are many technical reasons one could point to, including its speed, simplicity, and small install footprint. My favorite reason, however, is in NetBSD's slogan: <a href="https://www.netbsd.org/about/portability.html">&quot;Of course it runs NetBSD!&quot;</a></p>
 <p>It is no secret that I am a fan of old hardware. My rule to prevent my collecting from becoming hoarding is that each piece has to have an actual use. Since NetBSD runs on everything from high end modern systems all the way down to the Sega Dreamcast, I decided to use an iBook G4 for game development in Python with <a href="https://www.pygame.org/wiki/about">pygame</a>.</p>
 <h2>The Hardware</h2>
@@ -464,16 +464,16 @@
 <p>Just because a computer is old does not mean that it's trash. It also does not mean that it can't run more modern software even if in a more limited fashion. In the case of this computer, it's gorgeous and a joy to code on and deserves to be used for something enjoyable.</p>
 <p>Thank you for reading!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-                <enclosure url="http://localhost:8000/images/ibook2.jpg" length="390788" type="image/jpeg" />
+                <enclosure url="https://blog.pipetogrep.org/images/ibook2.jpg" length="390788" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>A Geographically Distributed Retro LAN with pfSense and FreshTomato</title>
-        <link>http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
-        <pubDate>Fri, 09 May 2025 02:29:05 GMT</pubDate>
-        <atom:updated>2025-05-30T14:32:47-05:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
+        <link>https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/08/a-geographically-distributed-retro-lan-with-pfsense-and-freshtomato/</guid>
+        <pubDate>Fri, 09 May 2025 01:29:05 GMT</pubDate>
+        <atom:updated>2025-05-30T14:32:47-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/retro_lan.png" alt="A Geographically Distributed Retro LAN with pfSense and FreshTomato" title="Retro LAN Diagram"><figcaption>Retro LAN Diagram</figcaption></figure><h2>The Retro LAN</h2>
 <p>I have a long time friend from college who got me into the retro computing hobby. He lives in Florida and I live in New York. This post describes how we're able to play on our 90s laptops together as if we were on the same network despite being in different states.</p>
 <p>Let's back up a little. What does &quot;retro LAN&quot; even mean? My definition is a network solely dedicated to connecting old computers with each other. Since &quot;old&quot; is subjective, the definition here encompasses any computer that can connect via IEEE 802.3 Ethernet via RJ45 cable or 802.11 WiFi. For my friend and I, that includes Macintosh and PC laptops from the 90s, PowerPC Macs from the early 2000s, and Windows XP laptops.</p>
 <p>What does one do with a retro LAN? In our case we have and will:</p>
@@ -620,16 +620,16 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p>Congratulations! That FreshTomato router is now a maintenance free, remote gateway to your very own retro LAN. Because the client's existing WiFi network is its WAN, it is isolated from everything else on the main network it is connected to. Because of the separate interface and firewall rules on pfSense, the retro LAN is isolated from any other network as well. You are now safe from Blaster Worms and ILOVEYOU viruses!</p>
 <p>Have fun!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-                <enclosure url="http://localhost:8000/images/retro_lan.png" length="225401" type="image/png" />
+                <enclosure url="https://blog.pipetogrep.org/images/retro_lan.png" length="225401" type="image/png" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
     <item>
         <title>IDE Drive Adapters and Picky Retro Computers</title>
-        <link>http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
-        <guid isPermaLink="true">http://localhost:8000/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
-        <pubDate>Tue, 06 May 2025 05:50:10 GMT</pubDate>
-        <atom:updated>2025-05-30T14:29:11-05:00</atom:updated>
-        <description><![CDATA[<figure><img src="http://localhost:8000/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
+        <link>https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</link>
+        <guid isPermaLink="true">https://blog.pipetogrep.org/2025/05/06/ide-drive-adapters-and-picky-retro-computers/</guid>
+        <pubDate>Tue, 06 May 2025 04:50:10 GMT</pubDate>
+        <atom:updated>2025-05-30T14:29:11-04:00</atom:updated>
+        <description><![CDATA[<figure><img src="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" alt="IDE Drive Adapters and Picky Retro Computers" title="Removable, no. Fixed, yes."><figcaption>Removable, no. Fixed, yes.</figcaption></figure><p>I recently acquired a Dell Inspiron 7000 Laptop from 1998. It's a beast of a laptop weighing in at 8 pounds! It has a Pentium II 300 MHz Processor, 320 MB of RAM, and a removable ATI video card! What it did not have, however, was a hard drive.</p>
 <p>I'm no stranger to using IDE adapters that convert relatively modern media like SD cards or SATA SSDs to work as a laptop IDE drive. I tried one of the latter, but no luck. The Dell saw no hard drive in its BIOS settings. What's worse is the BIOS is extremely limited, only allowing for auto drive detection.</p>
 <p>After some research, I decided to go with the Compact Flash (CF) Card to IDE adapter route. It turns out that CF Cards can behave exactly like an IDE drive. In fact, CF to IDE adapters have no chips on them, only traces to convert the CF Card pinout to IDE.</p>
 <p>That still didn't work. After trying multiple CF cards (8GB and under) and multiple CF to IDE adapters, I was ready to purchase some old spinning rust of dubious quality off of eBay or either give up. Then I learned is that CF Cards have two modes, removable and fixed.</p>
@@ -641,7 +641,7 @@ setup for this will be done on a network external to the one that pfSense is on.
 <p><img src="/images/atcfwchg.jpg" alt="ATCFWCHG Success" /></p>
 <p>After that, the Dell Inspiron 7000 saw the card as available and bootable. Knowing that it works, I purchased a higher capacity industrial card. I look forward to writing more about this machine soon!</p>
 <p>Want to discuss? Email me at <a href="mailto:blog@pipetogrep.org">blog@pipetogrep.org</a>.</p>]]></description>
-                <enclosure url="http://localhost:8000/images/drake_cf_cards.jpg" length="148226" type="image/jpeg" />
+                <enclosure url="https://blog.pipetogrep.org/images/drake_cf_cards.jpg" length="148226" type="image/jpeg" />
         <dc:creator>Chris Jones (blog@pipetogrep.org)</dc:creator>
     </item>
 </channel>
