@@ -27,7 +27,7 @@
   "@type": "BlogPosting",
   "headline": "Resurrecting iChat Audio and Video Conferencing",
   "datePublished": "2026-09-11T13:36:14-04:00",
-  "dateModified": "2026-10-06T10:26:09-04:00",
+  "dateModified": "2026-10-08T20:00:07-04:00",
   "author": {
     "@type": "Person",
     "name": "Chris Jones"
@@ -60,11 +60,11 @@
         </header>
         <main> <article class="post">
   <h1>Resurrecting iChat Audio and Video Conferencing</h1>
-<div class="page-meta"><p class="meta">Published on: <time datetime="2026-09-11T13:36:14-04:00">2026-09-11 13:36:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2026-10-06T10:26:09-04:00">2026-10-06 10:26:09</time> &bull; 7 min read</p></div>
+<div class="page-meta"><p class="meta">Published on: <time datetime="2026-09-11T13:36:14-04:00">2026-09-11 13:36:14</time> by <strong>Chris Jones</strong></p><p class="meta reading-time">Updated on: <time datetime="2026-10-08T20:00:07-04:00">2026-10-08 20:00:07</time> &bull; 7 min read</p></div>
 
 <h1>tl;dr</h1>
 <p>Add this to your <code>/etc/hosts</code> file on your old Mac running Leopard or Show Leopard (has not been tested on Tiger or Panther), and iChat should be able to make audio and video calls again. This assumes your router does port-preserving NAT (most do).</p>
-<pre><code>157.230.2.213 configuration.apple.com
+<pre><code>185.52.176.175 configuration.apple.com
 </code></pre>
 <p>Do note that if you are on a BSD based router like pfSense or OPNsense, you will need to enable source port preservation in your outbound NAT settings.</p>
 <h1>iChat AV and The iSight</h1>
@@ -151,7 +151,7 @@
 <h1>The Easy Way</h1>
 <p>Or you can just use my server! I keeping it running for the 1-5 people left in the world that want to video chat using the ancient software. :D</p>
 <p>On your old mac running OS X Leopard or Snow Leopard (might work on older but not tested), just enter this into your /etc/hosts file.</p>
-<pre><code>157.230.2.213 configuration.apple.com
+<pre><code>185.52.176.175configuration.apple.com
 </code></pre>
 <p>Then have the friend you want to call do the same. After that, mash that green call button!</p>
 <h1>You Don't Need an iSight</h1>
