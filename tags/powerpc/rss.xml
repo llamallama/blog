@@ -5,14 +5,14 @@
     <link>https://blog.pipetogrep.org/tags/powerpc/</link>
     <description>Posts tagged with: PowerPC</description>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Oct 2026 00:01:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:01:38 GMT</lastBuildDate>
     <atom:link href="https://blog.pipetogrep.org/tags/powerpc/rss.xml" rel="self" type="application/rss+xml" />
     <item>
         <title>Resurrecting iChat Audio and Video Conferencing</title>
         <link>https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</link>
         <guid isPermaLink="true">https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/</guid>
         <pubDate>Fri, 11 Sep 2026 17:36:14 GMT</pubDate>
-        <atom:updated>2026-10-08T20:00:07-04:00</atom:updated>
+        <atom:updated>2026-10-08T20:01:23-04:00</atom:updated>
         <description><![CDATA[<h1>tl;dr</h1>
 <p>Add this to your <code>/etc/hosts</code> file on your old Mac running Leopard or Show Leopard (has not been tested on Tiger or Panther), and iChat should be able to make audio and video calls again. This assumes your router does port-preserving NAT (most do).</p>
 <pre><code>185.52.176.175 configuration.apple.com
@@ -102,7 +102,7 @@
 <h1>The Easy Way</h1>
 <p>Or you can just use my server! I keeping it running for the 1-5 people left in the world that want to video chat using the ancient software. :D</p>
 <p>On your old mac running OS X Leopard or Snow Leopard (might work on older but not tested), just enter this into your /etc/hosts file.</p>
-<pre><code>185.52.176.175configuration.apple.com
+<pre><code>185.52.176.175 configuration.apple.com
 </code></pre>
 <p>Then have the friend you want to call do the same. After that, mash that green call button!</p>
 <h1>You Don't Need an iSight</h1>
